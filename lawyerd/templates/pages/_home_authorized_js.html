@@ -1,0 +1,411 @@
+{% load i18n static %}
+
+<script>
+    $(document).ready(function () {
+        let ButtonCancel = `
+          <button class="flex btn btn-danger" data-action="0" data-toggle="tooltip" data-placement="top" data-status="1"
+            title="{% trans "Cancel" %}">
+              {% trans "Cancel" %}
+          </button>`;
+
+        let ButtonDetail = `
+          <button class="flex btn btn-primary" data-action="1" data-toggle="tooltip" data-placement="top"
+            title="{% trans "Detail" %}">
+              {% trans "Detail" %}
+          </button>`;
+
+        {#data-toggle="lightbox" data-title="Screenshot" data-footer=""#}
+
+        let ButtonScreenshot = `
+          <button class="flex btn btn-info" data-action="2" data-toggle="tooltip" data-placement="top"    data-toggle="lightbox" data-title="Screenshot" data-footer=""
+            title="{% trans "Screenshot" %}">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            {# {% trans "Screenshot" %}#}
+          </button>`;
+
+
+        {#Orders#}
+        let table_complaints = $('#complaints').DataTable({
+            "serverSide": true,
+            "ajax": "{% url 'api:complaint_list' %}?format=datatables",
+            "columns": [
+                {
+                    title: "ID",
+                    data: "id",
+                    className: 'td__id',
+                },
+
+                {
+                    title: "Date",
+                    data: "created",
+                    className: 'td__created',
+                    render: function (data, type, row) {
+                        return moment(data).format("DD.MM.YYYY HH:mm:ss");
+                    }
+
+                },
+
+                {
+                    title: "Product",
+                    data: "product",
+                    className: 'td__product',
+                },
+
+                {
+                    title: "Search keywords/Link",
+                    data: "query",
+                    {#className: 'td__query',#}
+                    render: function (data, type, row) {
+                        return isUrlValid(data) ? `<a href="${data}">${data}</a>` : data
+                    }
+                },
+
+                /*
+                {
+                    title: "email",
+                    data: "email",
+                    className: 'td__email'
+                },
+
+
+                {
+                    title: "site_count",
+                    data: "site_count",
+                    className: 'td__site_count',
+                },
+                */
+
+                {
+                    title: "status_value",
+                    data: "status_value",
+                    visible: false,
+                },
+
+                {
+                    title: "Status",
+                    data: "status",
+                    className: 'td__status',
+                    render: function (data, type, row) {
+                        let res = data;
+
+                        switch (data) {
+                            case 0:
+                                res = `Queue position: ${row['status_value']} ${ButtonCancel}`;
+                                break;
+                            case 1:
+                                res = `
+                                        <ul class="">
+                                          <li>
+                                            <p><span>in progress: ${row['status_value']}%</span></p>
+                                            <div class="bar-wrap">
+                                              <span class="bar-fill" style="width: ${row['status_value']}%;"></span>
+                                            </div>
+
+                                            ${ButtonCancel}
+                                            ${ButtonDetail}
+                                          </li>
+                                        </ul>
+                                        `;
+
+                                break;
+                            case 2:
+                                res = `<span> Completed ${ButtonDetail}</span>`;
+                                break;
+                            case 3:
+                                res = `<span> Canceled ${ButtonDetail}</span>`;
+                                break;
+                        }
+
+                        return res;
+                    }
+                },
+            ]
+        });
+
+        let current_complaint_id = 0;
+
+        {#Order Details#}
+        let table_complaints_details = $('#complaint_details').DataTable({
+            "serverSide": true,
+            "paging": false,
+            "searching": false,
+            "info": false,
+            "ajax":
+                {
+                    "url": "{% url 'api:complaint_details_list' %}",
+                    "data": function (d) {
+                        d.format = "datatables";
+                        d.complaint_id = current_complaint_id;
+                    }
+                },
+
+            {#"data": {"id": 335},#}
+            {#"ajax": "{% url 'api:order_details_list' %}?format=datatables&id="+current_order_id,#}
+            "columns": [
+                {
+                    title: "ID",
+                    data: "id",
+                    className: 'td__id'
+                },
+
+                /*
+                                {
+                                    title: "order_id",
+                                    data: "order_id",
+                                },
+
+                 */
+
+
+                {
+                    title: "Date",
+                    data: "created",
+                    className: 'td__created',
+                    render: function (data, type, row) {
+                        return moment(data).format("DD.MM.YYYY HH:mm:ss");
+                    }
+                },
+
+                {
+                    title: "Infringing site",
+                    data: "site",
+                    className: 'td__site',
+                    {#width: "600px",#}
+                    render: function (data, type, row) {
+                        return `
+                              <span class="href_dots_ended">
+                                <a href="${data}">${data}</a>
+                              {#  <a href="${data}">${data}</a>#}
+                              </span>`
+                        // return isUrlValid(data) ? `<a href="${data}">${data}</a>` : data
+                    }
+                },
+
+                /*
+                {
+                    title: "hosting",
+                    data: "hosting",
+                    className: 'td__hosting'
+                },
+
+                {
+                    title: "abuse email",
+                    data: "email",
+                    className: 'td__email'
+                },
+                */
+
+
+                {
+                    title: "Screenshot",
+                    data: "screenshot",
+                    className: 'td__screenshot',
+                    render: function (data, type, row) {
+                        return ButtonScreenshot;
+
+                    },
+                    render2: function (data, type, row) {
+                        let res = data;
+
+                        if (data) {
+                            res = `
+                              <a href="${data}" data-toggle="lightbox" data-title="Screenshot" data-footer="">
+                                <img src="${data}" class="img-fluid">
+                              </a>
+                              `;
+                        }
+                        return res
+                    }
+
+
+                },
+
+                {
+                    title: "Status",
+                    data: "status",
+                    className: 'td__status',
+                    render: function (data, type, row) {
+                        let res = data;
+
+                        switch (data) {
+                            case 0:
+                                res = `in process`;
+                                break;
+                            case 1:
+                                res = `completed`;
+
+                                break;
+                            case 2:
+                                res = `Error!`;
+                                break;
+                            {#case 3:#}
+                            {#    res = 'Canceled' + `${ButtonDetail}`;#}
+                            {#    break;#}
+                        }
+
+                        return res;
+                    }
+                },
+            ]
+        });
+        {#Order Details#}
+
+        {#var jTarget = $('body');#}
+
+        {#$('#order_details').wrap('<div id="hide" style="display:none"/>');#}
+
+        $("#authorised_search_form").on("submit", function (event) {
+            event.preventDefault();
+
+            const form_data = $(this).serialize();
+            console.log(form_data);
+            {#jTarget.ajaxloader(); // start/resume the loader#}
+            {#console.log($(this).serializeArray());#}
+
+            $.ajax({
+                type: "POST",
+                url: "{% url 'api:complaint_add' %}",
+
+                data: form_data,
+                beforeSend: function (xhr) {
+                    SpinnerShow();
+                },
+                success: function (msg) {
+                    if (msg['oops_page'] === true) {
+                        window.location.href = {% url "oops" %};
+                    }
+
+                    table_complaints.ajax.reload();
+                    //$('#search_results')[0].innerText = numberWithCommas(msg['search_results']);
+
+                },
+
+                error: function () {
+                    alert("failure");
+                    {#window.location.reload(false);#}
+                },
+            }).done(function (html) {
+                SpinnerHide();
+
+                table_complaints.ajax.reload();
+                table_complaints.draw();
+                table_complaints_details.ajax.reload();
+                table_complaints_details.draw();
+
+            });
+
+        });
+
+
+        // Sort by column 1 and then re-draw
+        table_complaints
+            .order([1, 'desc'])
+            .draw();
+
+        table_complaints_details
+            .order([1, 'desc'])
+            .draw();
+
+        $('#complaints tbody').on('click', 'button', function () {
+            let data = table_complaints.row($(this).parents('tr')).data();
+            let id = data['id'];
+
+            // кнопки действий
+            let action = parseInt(this.getAttribute('data-action'));
+            let status = parseInt(this.getAttribute('data-status'));
+
+            switch (action) {
+                case 0:
+                    SetNumberStatus(this, id, status);
+                    break;
+
+                case 1:
+                {#ShowOrderDetails(id);#}
+                    console.log(`open complaint details: ${id}`);
+                    current_complaint_id = id;
+                    $('#current_complaint_id')[0].innerText = `# ${id}`;
+
+                    $('#complaints_details_div').show();
+                    table_complaints_details.draw();
+                {#table_order_details.columns(1).search(`^${id}$` , true).draw();#}
+                {#table_order_details.columns(1).search(`^${id}$` , true).draw();#}
+
+                {#table_order_details.columns(0).search(`^345$` , true).draw();#}
+                {#table_order_details.columns(0).search(`^${id}$` , true).draw();#}
+
+                    break;
+
+                default:
+                    console.error(`Unknown action: ${action}`)
+
+            }
+
+        });
+
+
+        $('#complaint_details tbody').on('click', 'button', function () {
+            let data = table_complaints_details.row($(this).parents('tr')).data();
+            let id = data['id'];
+
+            // кнопки действий
+            let action = parseInt(this.getAttribute('data-action'));
+            let status = parseInt(this.getAttribute('data-status'));
+
+            switch (action) {
+                {#case 0:#}
+                {#    SetNumberStatus(this, id, status);#}
+                {#    break;#}
+                {##}
+                {#case 1:#}
+                {#    ShowOrderDetails(id);#}
+                {#    break;#}
+
+                case 2:
+                    // show lightbox, https://ashleydw.github.io/lightbox/
+                    let screenshot_url = data.screenshot;
+
+                    let href = document.createElement('a');
+                    href.setAttribute('href', screenshot_url);
+                    href.setAttribute('data-toggle', 'lightbox');
+
+                    $(href).ekkoLightbox();
+                    break;
+
+                default:
+                    console.error(`Unknown action: ${action}`)
+
+            }
+
+        });
+
+
+        //SetStatus
+        function SetNumberStatus(event, id, status) {
+            console.log(id, status);
+            {#let that = event;#}
+
+            $.ajax({
+                type: "POST",
+                url: "{% url 'api:complaint_cancel' %}",
+                // data: {service_id: that.value, checked: that.checked}
+                data: {
+                    id: id,
+                    status: status,
+                }
+            }).done(function (data) {
+                console.log('Good');
+                table_complaints.ajax.reload(null, false); // user paging is not reset on reload
+
+            }).fail(function () {
+                console.log('Failed response');
+                table_complaints.ajax.reload(null, false); // user paging is not reset on reload
+            })
+        }
+
+
+        setInterval(function () {
+            table_complaints.ajax.reload();
+        }, 30000);
+
+    })
+</script>

@@ -1,0 +1,53 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Registration" %}{% endblock %}
+
+{% block inner %}
+  <div id="main__registration">
+    <div class="container">
+
+
+        <h1>{% trans "Registration" %}</h1>
+
+
+          {#<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>#}
+        <form class="signup " id="signup_form" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+
+            {#            {% crispy form %}#}
+
+            {#    {{ form|crispy }}#}
+
+
+          <div class="form-row">
+              {{ form|as_crispy_errors }}
+
+            <div class="form-group">
+                {{ form.email|as_crispy_field }}
+                {{ form.username|as_crispy_field }}
+                {{ form.password1|as_crispy_field }}
+                {{ form.password2|as_crispy_field }}
+            </div>
+
+            <div style="height: 50px;">I agree with
+              <a href="{% url 'terms' %}"> Terms of Use</a> and
+              <a href="{% url 'policy' %}">Privacy Policy</a>
+            </div>
+
+              {{ form.captcha|as_crispy_field }}
+          </div>
+
+            {% if redirect_field_value %}
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+            {% endif %}
+                <button class="btn btn-primary btn_registration" type="submit">{% trans "Registration" %}</button>
+
+        </form>
+      </div>
+    </div>
+
+
+{% endblock %}

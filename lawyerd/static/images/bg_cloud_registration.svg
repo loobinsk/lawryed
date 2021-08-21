@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16mm" height="9mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1600 900"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil11 {fill:none}
+    .fil6 {fill:#542CDF}
+    .fil0 {fill:#6236FF}
+    .fil5 {fill:#663CFC}
+    .fil4 {fill:#9578FF}
+    .fil7 {fill:#B19CFF}
+    .fil10 {fill:#CCCCCC}
+    .fil3 {fill:#E3B330}
+    .fil9 {fill:#E9E9E9}
+    .fil1 {fill:#FCD66E}
+    .fil2 {fill:#FECA3B}
+    .fil8 {fill:white}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M-0 0l1600 0 0 900 -1600 0 0 -900z"/>
+   </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <g id="_2317625024432">
+    </g>
+    <path id="Combined-Shape" class="fil0" d="M1370.28 478.09c-57.52,-96.31 -232.5,-166.55 -232.5,-262.92 0,-90.05 153.8,-161.72 461.4,-215.03 -236.55,88.2 -315.27,198.24 -236.16,330.13 33.89,56.49 30.05,104.51 7.26,147.82l0 0zm229.28 -478.01c0.15,-0.03 0.29,-0.05 0.44,-0.08l0 905.08c-0.15,-0.05 -0.29,-0.09 -0.44,-0.14l0 -904.86z"/>
+    <polygon id="Rectangle_2" class="fil1" points="1315.73,476.18 1302.62,501.51 1206.19,488.49 "/>
+    <polygon id="Rectangle_3" class="fil2" points="1306.01,529.18 1302.62,501.51 1207.07,488.55 1298.32,508.87 "/>
+    <polygon id="Rectangle_4" class="fil3" points="1306.01,529.18 1298.32,508.87 1207.07,488.55 "/>
+    <polygon id="Rectangle_5" class="fil1" points="1298.06,508.69 1285,536.25 1206.19,488.55 "/>
+    <polygon id="Rectangle_8" class="fil4" points="1137.24,568.74 1114.77,611.35 953.5,589.94 "/>
+    <polygon id="Rectangle_9" class="fil5" points="1120.46,657.07 1114.77,611.35 954.39,589.94 1107.55,623.5 "/>
+    <polygon id="Rectangle_10" class="fil6" points="1120.46,657.07 1107.55,623.5 954.39,589.94 "/>
+    <polygon id="Rectangle_11" class="fil4" points="1107.55,623.5 1085.77,669.44 954.39,589.94 "/>
+    <path class="fil7" d="M1363.46 330.27c118.74,197.94 -225.68,291.89 -225.68,443.53 0,101.09 154.07,181.54 462.22,241.34l0 -1015.14c-236.85,88.22 -315.69,198.31 -236.54,330.27l0 0z"/>
+    <polygon id="Rectangle_14" class="fil8" points="1345.82,723.44 1326.18,755.72 1200.16,729.61 "/>
+    <polygon id="Rectangle_15" class="fil9" points="1327.77,792.63 1325.86,755.71 1201.1,729.76 1319.5,765.05 "/>
+    <polygon id="Rectangle_16" class="fil10" points="1327.77,792.63 1319.5,765.05 1201.1,729.76 "/>
+    <polygon id="Rectangle_17" class="fil8" points="1319.4,765 1299.58,799.94 1199.64,730.08 "/>
+   </g>
+  </g>
+  <polygon class="fil11" points="-0,0 1600,0 1600,900 -0,900 "/>
+ </g>
+</svg>

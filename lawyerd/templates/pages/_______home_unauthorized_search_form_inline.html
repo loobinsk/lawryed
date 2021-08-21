@@ -1,0 +1,10 @@
+{% load i18n static %}
+
+<form action="{% url 'account_signup' %}" id="anonymous_search_form_after_show" class="form-inline ">
+    {% csrf_token %}
+  <input id="anonymous_search_input" class="form-control" type="search" name="search_text"
+         disabled
+         placeholder="{% trans 'Enter keywords for start' %}"
+         aria-label="{% trans 'Search' %}">
+  <button id="account_register" class="btn btn-primary" type="submit">{% trans "To try one more times" %}</button>
+</form>

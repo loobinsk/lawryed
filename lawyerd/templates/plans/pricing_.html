@@ -1,0 +1,49 @@
+{% extends "side_bar.html" %}
+{% load static crispy_forms_tags i18n %}
+
+
+{% block title %}{% trans "Payment plan" %}{% endblock %}
+
+{% block inner_content %}
+
+    {#  <div class="row">#}
+    {##}
+    {#      {% include "side_bar.html" %}#}
+    {##}
+    {#    <div class="col-sm">#}
+
+
+    {#      https://startbootstrap.com/snippets/pricing-table/#}
+
+    {#    <section class="pricing py-5">#}
+    {#  <div class="container">#}
+
+  <section id="main__pricing">
+    <div class="container-fluid d-flex justify-content-between">
+        {#      <div class="col-4">#}
+
+        {% include "side_bar.html" %}
+        {#      </div>#}
+        {#      <div class="col-md-9 d-flex justify-content-between">#}
+
+
+        {#    <h2>{% trans "See our great value plans" %}</h2>#}
+        {% include "plans/plan_table.html" %}
+
+
+        {#      </div>#}
+    </div>
+  </section>
+
+
+
+{% endblock %}
+
+{##}
+{#{% extends 'plans/base.html' %}#}
+{#{% load i18n %}#}
+{##}
+{#{% block body %}#}
+{#    <h2>{% trans "See our great value plans" %}</h2>#}
+{#    {% include "plans/plan_table.html" %}#}
+{#{% endblock %}#}

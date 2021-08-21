@@ -1,0 +1,14 @@
+{% extends "side_bar.html" %}
+{% load static i18n tinycontent_tags %}
+
+
+{% block title %}{% trans "Ooops!" %}{% endblock %}
+
+{% block inner_content %}
+  <H1>Oooups!</H1>
+  <h5 class="gray_text">
+      {% trans "In order to start using our service, you must fill out information about the company and select a payment method (see the menu on the left, the blank tabs are marked in red)" %}
+  </h5>
+
+  <img src="{% static 'images/paper_plane_purple.svg' %}" alt="">
+{% endblock %}

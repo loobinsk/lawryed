@@ -1,0 +1,12 @@
+{% extends "side_bar.html" %}
+{% load static i18n tinycontent_tags %}
+
+
+
+{% block title %}{% trans "Privacy Policy" %}{% endblock %}
+
+{% block inner_content %}
+  <div class="container-fluid">
+    {% tinycontent_simple 'policy' %}
+  </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load i18n static %}
+
+
+{% block content %}
+  <section id="main">
+      {% if request.user.is_authenticated %}
+          {% include "pages/home_authorized.html" %}
+      {% else %}
+          {# ##################################################################################################### #}
+          {#    Not loggined#}
+          {% include "pages/home_unauthorized.html" %}
+          {#    Not loggined#}
+      {% endif %}
+  </section>
+{% endblock %}
+
+
+{# Authorized #}
+{% block extra_js %}
+    {% if request.user.is_authenticated %}
+        {% include "pages/home_authorized_js.html" %}
+    {% else %}
+        {% include "pages/home_unauthorized_js.html" %}
+        {# Not Authorized #}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,81 @@
+{#{% load rest_framework %}#} {#|smart_urlquote_wrapper #} {#urlize_quoted_links#}
+{% block subject %}Complaint for copyright infringement to: {{ field_6 }}{% endblock %}
+
+{% block html %}
+    <div style="text-align: center;">
+        <h1><b>COMPLAINT<br>
+            FOR COPYRIGHT INFRINGEMENT
+        </b>
+        </h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="text-align: justify">
+        Dear Designated Agent:<br>
+        <br>
+
+        In accordance to The Berne Convention for the Protection of Literary and Artistic Works as of September 9, 1886
+        (“Berne Convention”), under the regulation of The Directive on Copyright in the Digital Single Market as of
+        April 17, 2019 (“Directive 2019/790”) and The Digital Millennium Copyright Act as of October 12, 1998
+        (“DMCA”), {{ field_1 }} provides the following information:<br>
+        <br>
+
+        1.&nbsp;{{ field_2 }} is a {{ field_3 }} that was authorized by {{ field_1 }} as a right holder. The main office
+        of {{ field_1 }} located at {{ field_4 }}<br>
+        <br>
+
+        2.&nbsp;The photo belongs to the subject matter of copyright, which protected under the Berne Convention and the
+        DMCA. A photo is a complex object that was created as a result of the creative intellectual activity of the
+        author in combination with a unique selection of creative composition of color, objects of gamma, light and
+        other elements which were developed by the Author or belong to the right to which the Author acquired.<br>
+
+        {##}
+        {#        {% if field_52 %}#}
+        {#            3.&nbsp;Trademark - “{{ field_52 }}”<br>#}
+        {#        {% else %}#}
+        {#            3.&nbsp;Trademark that was registered in {{ field_51 }}<br>#}
+        {#        {% endif %}#}
+
+        3.&nbsp;Trademark that was registered in {{ field_51 }} Trademark register # {{ field_52 }} –
+        “{{ field_53 }}”<br>
+        <br>
+
+        4.&nbsp;This site <a href="{{ field_6 }}">{{ field_6 }}</a> is infringing our copyrights using worldwide knowing
+        register trade mark and unique photo which has been creating {{ field_1 }} employees, without any
+        legal grounds or permission from {{ field_1 }}.<br>
+        <br>
+
+        5.&nbsp;This letter is official notification under Section 512(c) of the Digital Millennium Copyright Act. I
+        seek the removal of the infringing material referenced above. Please take note as a service provider, the
+        Digital Millennium Copyright Act requires you, to remove or disable access to the infringing materials upon
+        receipt of this notice.<br>
+        <br>
+
+        6.&nbsp;The Online Copyright Infringement Liability Limitation Act (“OCILLA”) grants service providers such as
+        your company immunity from liability so long as investigate and rectify this copyright violation in a timely
+        manner. Should your company fail to do so, it may become liable for the infringement.<br>
+        <br>
+
+        7.&nbsp;I, as authorized person by {{ field_1 }} make the statement that I have a good faith belief that use of
+        the disputed material is not authorized by the copyright owner, its agent or the law;<br>
+        <br>
+
+        8.&nbsp;I, as authorized person by {{ field_1 }} make the statement that the information in the complaint is
+        accurate, and under penalty of perjury, that I am authorized to act on behalf of the owner of an exclusive right
+        that is allegedly infringed. <br>
+        <br>
+
+        9.&nbsp;Please remove and disable all access to the aforementioned copyrighted work immediately.<br>
+        <br>
+
+        10.&nbsp;Actual telephone number {{ field_7 }} <br>
+
+        <br>
+        <br>
+        Best regards,<br>
+        {{ field_2 }}<br>
+    </div>
+
+{% endblock %}

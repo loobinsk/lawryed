@@ -1,0 +1,60 @@
+{% extends "side_bar.html" %}
+
+{% load static crispy_forms_tags i18n tinycontent_tags my_tags %}
+
+
+{% block title %}{% trans "Pricing" %}{% endblock %}
+
+{% block inner_content %}
+
+  <div id="pricing">
+    <div class="container">
+      <div class="card-group card-group-md card-deck">
+
+        {% for plan in plan_list %}
+          <div class="card mb-4 shadow-sm {% ifequal forloop.counter0 current_userplan_index %}current{% endifequal %}">
+            <div class="card-header" style="font-size: unset !important;">
+              {{ plan.name }}
+              {% ifequal forloop.counter0 current_userplan_index %}(You current plan){% endifequal %}
+            </div>
+
+
+            <h5 class="card-title pricing-card-title">
+              {% for plan_pricing in plan.planpricing_set.all %}
+                {#                <h4 class="my-0 font-weight-normal">{{ plan_pricing.pri }}</h4>#}
+
+                <span class="plan_pricing_price">
+                        {% if plan_pricing.price == -1 %}
+                          Contact support
+                        {% elif plan_pricing.price == 0 %}
+                          &nbsp;
+                        {% else %}
+                          {#                            {{ plan_pricing.price|floatformat:0 }}&nbsp;${% if plan_pricing.price > 0 %}/m{% endif %}#}
+                          ${{ plan_pricing.price|floatformat:0 }}
+                        {% endif %}
+                </span>
+              {% endfor %}
+            </h5>
+
+
+            <div style="margin-top: 10px !important;" class="card-body pricing-description {% ifequal forloop.counter0 current_userplan_index %}active_plan{% endifequal %}">
+              {{ plan.description|split:"<!-- Breaker for sub Describe, Do not edit this line !!!-->"|index:0|safe }}
+            </div>
+
+
+            <div class="card-footer bg-white">
+              {{ plan.description|split:"<!-- Breaker for sub Describe, Do not edit this line !!!-->"|index:1 }}
+              {#            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Produkt auswählen</button>#}
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+
+      <div class="pricing_text">
+        {% tinycontent_simple 'pricing' %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

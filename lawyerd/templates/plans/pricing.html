@@ -1,0 +1,25 @@
+{% extends "side_bar.html" %}
+{% load static crispy_forms_tags i18n %}
+
+
+{% block title %}{% trans "Payment plan" %}{% endblock %}
+
+{% block inner_content %}
+
+
+
+	{% include 'plans/pricing2.html' %}
+
+{% endblock %}
+
+{##}
+{#{% extends 'plans/base.html' %}#}
+{#{% load i18n %}#}
+{##}
+{#{% block body %}#}
+{#    <h2>{% trans "See our great value plans" %}</h2>#}
+{#    {% include "plans/plan_table.html" %}#}
+{#{% endblock %}#}
+
+
+

@@ -1,0 +1,113 @@
+{% extends "side_bar.html" %}
+{% load static crispy_forms_tags i18n %}
+{% load countries %}
+{#{% load widget_tweaks %}#}
+
+{#{% load bootstrap4 crispy_forms_tags %}#}
+
+
+{#{% load bootstrap4 %}       {# import bootstrap4/bootstrap3 #}
+{#{% bootstrap_css %}         {# Embed Bootstrap CSS #}
+{#{% bootstrap_javascript jquery='full' %}  {# Embed Bootstrap JS+jQuery #}
+{#{{ form.media }}            {# Adds date-picker required JS and CSS #}
+
+{% block title %}{% trans "Company information" %}{% endblock %}
+
+
+{## TODO: https://simpleisbetterthancomplex.com/tutorial/2018/11/28/advanced-form-rendering-with-django-crispy-forms.html#}
+
+{% block inner_content %}
+  <section>
+    <div id="company__information">
+
+{#      {% get_countries as countries %}#}
+{#<select>#}
+{#{% for country in countries %}#}
+{#    <option value="{{ country.code }}">{{ country.name }}</option>#}
+{#{% endfor %}#}
+{#</select>#}
+
+        {#    <input id="input-b2" name="input-b2" type="file" class="file" data-show-preview="false" data-value="9623ca.pdf">#}
+
+        {#  <div class="custom-file">#}
+        {#    <input type="file" class="custom-file-input" id="customFile" name="myImage">#}
+        {#    <label class="custom-file-label" for="customFile">Choose image file...</label>#}
+        {#  </div>#}
+        {##}
+        {##}
+        {#  <form class="form-horizontal" method="post" action="{% url 'company' %}" enctype="multipart/form-data">#}
+        {#    <div class="custom-file">#}
+        {#      <input type="file" class="custom-file-input" id="customFile" name="myImage">#}
+        {#      <label class="custom-file-label" for="customFile">Choose image file...</label>#}
+        {#    </div>#}
+        {##}
+        {#      {{ form.document_right|as_crispy_field }}#}
+        {#  </form>#}
+
+        {#        {{ form.media }}#}
+
+
+        {% crispy form %}
+
+        {#  <form class="form-horizontal" method="post" action="{% url 'company' %}" enctype="multipart/form-data">#}
+        {#      {% csrf_token %}#}
+        {#      {{ form|crispy }}#}
+        {#  </form>#}
+
+
+        {#      <form class="form-horizontal" method="post" action="{% url 'company' %}" enctype="multipart/form-data">#}
+        {#          {% csrf_token %}#}
+        {##}
+        {#        <div class="form-row">#}
+        {#          <div class="form-group col-sm">#}
+        {#            <div class="col-sm float-right">#}
+        {#                {{ form.company_name|as_crispy_field }}#}
+        {#                {{ form.owner_name|as_crispy_field }}#}
+        {#                {{ form.owner_surname|as_crispy_field }}#}
+        {#                {{ form.title|as_crispy_field }}#}
+        {#                {{ form.address|as_crispy_field }}#}
+        {#                {{ form.region|as_crispy_field }}#}
+        {#                {{ form.owner_date|attr:"type:date"|as_crispy_field}}#}
+        {#                {{ form.products|as_crispy_field }}#}
+        {#                {{ form.document_right|attr:"accept:.pdf"|as_crispy_field }}#}
+        {#            </div>#}
+        {#          </div>#}
+        {##}
+        {##}
+        {#          <div class="form-group col-sm">#}
+        {#            <div class="col-sm float-right">#}
+        {#                {{ form.email|as_crispy_field }}#}
+        {#                {{ form.additional|as_crispy_field }}#}
+        {#                {{ form.additional2|as_crispy_field }}#}
+        {#                {{ form.confirmation|as_crispy_field }}#}
+        {#                {{ form.website|as_crispy_field }}#}
+        {#                {{ form.phone|as_crispy_field }}#}
+        {#                {{ form.youtube|as_crispy_field }}#}
+        {#                {{ form.document|attr:"accept:.pdf"|as_crispy_field }}#}
+        {#              <button type="submit" class="btn btn-primary">{% trans "Update" %}</button>#}
+        {#            </div>#}
+        {#          </div>#}
+        {#        </div>#}
+        {#      </form>#}
+    </div>
+  </section>
+{% endblock %}
+
+
+
+
+
+{% block extra_js %}
+  <script>
+      {#document.#}
+      // with plugin options
+
+      {#$("#id_document").#}
+      $("input[type='file']").fileinput({
+          'showUpload': false,
+          'showPreview': false,
+          'previewFileType': 'any',
+          allowedFileExtensions: ['pdf'],
+      });
+  </script>
+{% endblock %}

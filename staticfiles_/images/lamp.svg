@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="277px" height="247px" viewBox="0 0 277 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Group@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" transform="translate(-925.000000, 0.000000)">
+            <g id="Group" transform="translate(925.000000, 0.000000)">
+                <ellipse id="Oval" fill-opacity="0.417395105" fill="#6236FF" cx="138.5" cy="216" rx="138.5" ry="10"></ellipse>
+                <circle id="Oval" fill="#FFFFFF" cx="138.5" cy="215.5" r="31.5"></circle>
+                <path d="M277,216 C277,210.477153 214.991438,206 138.5,206 C62.0085622,206 0,210.477153 0,216 C0,210.827857 17.0317547,113.226312 117,100.851624 L117,82.5 C117,72.169261 124.286183,63.5403013 134,61.4716715 L134,4.5 C134,2.01471863 136.014719,1.46673935e-14 138.5,1.42108547e-14 C140.985281,1.37543159e-14 143,2.01471863 143,4.5 L143,61.4716715 C152.713817,63.5403013 160,72.169261 160,82.5 L160,100.851624 C259.968245,113.226312 277,210.827857 277,216 Z" id="Combined-Shape" fill="#6236FF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

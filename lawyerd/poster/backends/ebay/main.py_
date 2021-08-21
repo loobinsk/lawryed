@@ -1,0 +1,71 @@
+import logging
+from typing import List
+from templated_email import send_templated_mail # noqa
+
+from ...main import Poster, ApiKey, DataModels, get_site_screenshot  # , SendAbuseExitCode
+
+
+class ProcessBackend(Poster):
+    domains: List[str] = ['ebay.com', ]
+    process_email_send: bool = False
+    default: bool = False
+    help: str = 'Ebay backend'
+
+    def get_site_screenshot(self):
+        self.data_screenshot = get_site_screenshot(self.complaint_detail.site)
+
+    def get_site_hosting(self):
+        return ''
+
+    def get_site_hosting_abuse_email(self):
+        return ''
+
+    def send_complaint_email(self):
+        res: DataModels.STATUS = DataModels.STATUS.error
+        to_email = 'copyright@ebay.com'
+        #to_email = 'i.makushinsky@gmail.com'  # TODO: CHECK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        #to_email = 'omjqunp@arasj.net'  # TODO: CHECK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        _APPLICATON_PDF_STR = 'application/pdf'
+
+        mail_attachments = [
+            ('screenshot.png', self.data_screenshot, 'image/png'),
+            ('product.pdf', self.product.document.read(), _APPLICATON_PDF_STR),
+        ]
+
+        if self.company.document:
+            mail_attachments.append(('confirmation.pdf', self.company.document.read(), _APPLICATON_PDF_STR))
+
+        params_dict: dict = {
+            'field_1': self.company.company_name,
+            'field_2': self.company.owner_surname,
+            'field_3': self.company.title,
+            'field_4': self.company.address,
+
+            # 'field_5': company.region,
+            'field_51': self.company.region,
+            'field_52': self.company.products,
+            # 'field_53': '*********************',
+
+            'field_6': self.complaint_detail.site,
+            'field_7': self.company.phone,
+            'field_8': self.company.email,
+            'field_9': self.company.terms,
+        }
+        logging.info('Send email...')
+
+        send_templated_mail(
+            template_name='poster_ebay',
+            from_email=ApiKey.API_NO_REPLY_EMAIL,
+            recipient_list=[to_email],
+            context=params_dict,
+            attachments=mail_attachments,
+        )
+        res = DataModels.STATUS.ok
+        print(f'Complaint detail : {self.complaint_detail.id} sended!!!!!!!!!!!!!!!!!!!!!!!!')
+        # except Exception as e:
+        #     print(f'Email send fail! {e}')
+
+        self.data_status = res
+
+        pass

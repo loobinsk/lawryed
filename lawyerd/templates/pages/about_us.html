@@ -1,0 +1,12 @@
+{% extends "side_bar.html" %}
+{% load static i18n tinycontent_tags %}
+
+
+
+{% block title %}{% trans "About Us" %}{% endblock %}
+
+{% block inner_content %}
+  <div class="container about_us">
+    {% tinycontent_simple 'about_us' %}
+  </div>
+{% endblock %}

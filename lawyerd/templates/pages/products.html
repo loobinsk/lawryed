@@ -1,0 +1,239 @@
+{#{% extends "base.html" %}#}
+{% extends "side_bar.html" %}
+
+{% load widget_tweaks %}
+{% load static crispy_forms_tags i18n %}
+
+
+{% block title %}{% trans "Products" %}{% endblock %}
+
+
+{## TODO: https://simpleisbetterthancomplex.com/tutorial/2018/11/28/advanced-form-rendering-with-django-crispy-forms.html#}
+
+
+{% block inner_content %}
+  <section>
+    <h3>{% trans "New Product" %}</h3>
+    <p class="gray_text">{% trans "Add your product (it could be the game name, piece of art title or brand that you usually use in your bussiness activity)" %}</p>
+    {#  <p class="gray_text">{% trans "Adding products is necessary for finding and filling complaints." %}</p>#}
+
+    {% crispy form %}
+
+
+    {#  <form class="form-horizontal" method="post" action="{% url 'products' %}" enctype="multipart/form-data">#}
+    {#      {% csrf_token %}#}
+    {##}
+    {##}
+    {#    <div class="form-row">#}
+    {#      <div class="form-group col-md-6 mb-0">#}
+    {#          {{ form.name|as_crispy_field }}#}
+    {##}
+    {#        <div class="controls">#}
+    {#          <button type="submit" class="btn btn-primary">{% trans "Add product" %}</button>#}
+    {#        </div>#}
+    {#      </div>#}
+    {##}
+    {##}
+    {#      <div class="form-group col-md-6 mb-0">#}
+    {#          {{ form.document|attr:"accept:.pdf"|as_crispy_field }}#}
+    {#      </div>#}
+    {##}
+    {##}
+    {#    </div>#}
+    {#  </form>#}
+
+
+    <h3>{% trans "Your products" %}</h3>
+    {#  <p class="gray_text">{% trans "Here is list of your products. To remove a product from list, click on the button on left" %}</p>#}
+    <p class="gray_text">{% trans "Find a list of your products bellow. To remove a product from the list you have to click on the button in the left corner" %}</p>
+
+
+    <table id="table_products" class="table table-striped table-bordered" style="width:100%"></table>
+  </section>
+{% endblock %}
+
+
+{% block extra_js %}
+  <script>
+    {#document.#}
+    // with plugin options
+
+    {#$("#id_document").#}
+    $("input[type='file']").fileinput({
+      'showUpload': false,
+      'showPreview': false,
+      'previewFileType': 'any',
+      allowedFileExtensions: ['pdf'],
+    });
+  </script>
+
+
+  <script>
+    let ButtonDelete = `
+      <button class="flex btn btn-danger data-toggle="tooltip" data-placement="top" data-status="1"
+        title="{% trans "Delete" %}">
+          X
+      </button>
+  `;
+
+
+    $(document).ready(function () {
+      let table_products = $('#table_products').DataTable({
+        "oLanguage": datatable_oLanguage,
+        "autoWidth": false,
+        "serverSide": true,
+        "ajax": "{% url 'api:product_list' %}?format=datatables",
+        "columns": [
+          // Use dot notation to reference nested serializers.
+          // This data: could alternatively be displayed with the serializer's ReadOnlyField as well, as seen in the minimal example.
+          {
+            title: "ID",
+            data: "id",
+            width: datatable_width_id,
+          },
+
+          {
+            title: "Date",
+            data: "created",
+            width: datatable_width_date,
+
+            render: function (d) {
+              return moment(d).format("DD.MM.YYYY HH:mm:ss");
+              {#return convertJsonDateToShortDate(d);#}
+            }
+
+          },
+
+
+          {
+            title: "Type",
+            data: "itype",
+            render: function (data, type, row) {
+              let res = data;
+
+              switch (data) {
+                case 0:
+                  res = 'Game';
+                  break;
+
+                case 1:
+                  res = 'Software';
+                  break;
+                case 2:
+                  res = 'Photo';
+                  break;
+
+                case 3:
+                  res = 'Picture';
+                  break;
+                case 4:
+                  res = 'Course';
+                  break;
+              }
+
+              return res;
+            }
+          },
+
+          {
+            title: "Name",
+            data: "name"
+          },
+
+          {
+            title: "document_file_name",
+            data: "document_file_name",
+            visible: false,
+
+          },
+
+
+          {
+            title: "Document",
+            data: "document",
+            render: function (data, type, row) {
+              let res = data;
+              res = `<a href=${data}> ${row['document_file_name']} </a>`;
+              return res;
+            }
+          },
+
+
+          {
+            title: "Status",
+            data: "status",
+            width: datatable_width_status,
+            render: function (data, type, row) {
+              let res = data;
+
+              switch (data) {
+                case 0:
+                  res = `<span>In review ${ButtonDelete}</span>`;
+
+                {#res = row['status_value'];#}
+                  break;
+
+
+                case 1:
+                  res = 'Accepted';
+                  break;
+                case 3:
+                  res = 'Canceled';
+                  break;
+
+                      {#default:#}
+                      {#  res = data;#}
+              }
+
+              return res;
+            }
+          },
+        ]
+      });
+
+
+      // Sort by column 1 and then re-draw
+      table_products
+              .order([1, 'desc'])
+              .draw();
+
+      $('#table_products tbody').on('click', 'button', function () {
+        console.log('assigned');
+
+        let data = table_products.row($(this).parents('tr')).data();
+        let id = data['id'];
+
+        // кнопки действий
+        let status = this.getAttribute('data-status');
+        SetNumberStatus(this, id, status);
+      });
+
+      // buttons
+      function SetNumberStatus(event, id, status) {
+        $.ajax({
+          type: "POST",
+          url: "{% url 'api:product_delete' %}",
+          // data: {service_id: that.value, checked: that.checked}
+          data: {
+            id: id,
+            status: status,
+          }
+        }).done(function (data) {
+          console.log('Good');
+          table_products.ajax.reload(null, false); // user paging is not reset on reload
+
+        }).fail(function () {
+          console.log('Failed response');
+          table_products.ajax.reload(null, false); // user paging is not reset on reload
+        })
+      }
+
+      setInterval(function () {
+        table_products.ajax.reload();
+      }, 30000);
+
+    });
+
+
+  </script>
+{% endblock %}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16mm" height="9mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1600 900"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil10 {fill:#FBFBFB}
+    .fil7 {fill:#FBFBFB}
+    .fil6 {fill:#542CDF}
+    .fil5 {fill:#663CFC}
+    .fil4 {fill:#9578FF}
+    .fil9 {fill:#CCCCCC}
+    .fil3 {fill:#E3B330}
+    .fil8 {fill:#E9E9E9}
+    .fil1 {fill:#FCD66E}
+    .fil2 {fill:#FECA3B}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 0l1600 0 0 900 -1600 0 0 -900z"/>
+   </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,0 1600,0 1600,900 0,900 "/>
+  <g id="_650183104">
+  </g>
+  <g id="_624850160">
+  </g>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <polygon id="Rectangle_2" class="fil1" points="1260,388 1273,414 1375,401 "/>
+    <polygon id="Rectangle_3" class="fil2" points="1270,443 1273,414 1374,401 1278,422 "/>
+    <polygon id="Rectangle_4" class="fil3" points="1270,443 1278,422 1374,401 "/>
+    <polygon id="Rectangle_5" class="fil1" points="1278,422 1292,451 1375,401 "/>
+    <polygon id="Rectangle_8" class="fil4" points="990,488 1014,533 1184,510 "/>
+    <polygon id="Rectangle_9" class="fil5" points="1008,581 1014,533 1183,510 1022,545 "/>
+    <polygon id="Rectangle_10" class="fil6" points="1008,581 1022,545 1183,510 "/>
+    <polygon id="Rectangle_11" class="fil4" points="1022,545 1044,594 1183,510 "/>
+    <polygon id="Rectangle_14" class="fil7" points="1251,658 1270,691 1396,665 "/>
+    <polygon id="Rectangle_15" class="fil8" points="1269,728 1271,691 1395,665 1277,700 "/>
+    <polygon id="Rectangle_16" class="fil9" points="1269,728 1277,700 1395,665 "/>
+    <polygon id="Rectangle_17" class="fil10" points="1277,700 1297,735 1397,665 "/>
+   </g>
+  </g>
+  <polygon class="fil0" points="0,0 1600,0 1600,900 0,900 "/>
+  <polygon class="fil0" points="0,0 1600,0 1600,900 0,900 "/>
+ </g>
+</svg>
