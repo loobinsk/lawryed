@@ -328,7 +328,6 @@ lawyerd/media/
 
 
 .ipython/
-.env
 
 .envs/*
 
