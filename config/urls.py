@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
-
+from django.conf.urls.i18n import i18n_patterns
 from rest_framework_swagger.views import get_swagger_view
 
 # from company.views import company_update_view
@@ -15,11 +15,10 @@ from lawyerd.users.views import company_update_view
 
 schema_view = get_swagger_view(title='Lawyerd API')
 
-urlpatterns = \
-    [
+urlpatterns = i18n_patterns(
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
-
+        path('rosetta/', include('rosetta.urls')),
         # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
         path("", view=home_view, name="home"),
         path("faq/", TemplateView.as_view(template_name="pages/faq.html"), name="faq"),
@@ -62,7 +61,7 @@ urlpatterns = \
         path('feedback/', include('feedback.urls')),
         # path('feedback/', view=company_update_view),
 
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

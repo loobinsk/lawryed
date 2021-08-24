@@ -177,6 +177,21 @@
                         <a class="nav-link nav-link_registration {% if request.resolver_match.url_name == 'account_signup' %}active{% endif %}"
                            href="{% url 'account_signup' %}">{% trans "Registration" %}</a>
                     </li>
+	<div style='margin-left: 24px;'  class="dropdown">
+		{% get_current_language as LANGUAGE_CODE %}
+		{% get_available_languages as LANGUAGES %}
+		{% get_language_info_list for LANGUAGES as languages %}
+	  <div class="dropbtn">{{ LANGUAGE_CODE }}</div>
+	  <div class="dropdown-content">
+			{% for language in languages %}
+				<a href="/{{ language.code }}/"
+				{% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+				{{ language.name_local }}
+				</a>
+			{% endfor %}
+	  </div>
+	</div>
+		    </li>
 
                 </ul>
 

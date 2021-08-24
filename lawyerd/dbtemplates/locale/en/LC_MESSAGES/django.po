@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-15 13:13+0200\n"
+"POT-Creation-Date: 2021-08-23 17:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,88 +17,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: admin.py:56
+#: lawyerd/dbtemplates/admin.py:173
 msgid ""
 "Leaving this empty causes Django to look for a template with the given name "
 "and populate this field with its content."
 msgstr ""
 
-#: admin.py:82
+#: lawyerd/dbtemplates/admin.py:215
 msgid "Advanced"
 msgstr ""
 
-#: admin.py:85
+#: lawyerd/dbtemplates/admin.py:218
 msgid "Date/time"
 msgstr ""
 
-#: admin.py:102
+#: lawyerd/dbtemplates/admin.py:235
 #, python-format
 msgid "Cache of one template successfully invalidated."
 msgid_plural "Cache of %(count)d templates successfully invalidated."
 msgstr[0] ""
 msgstr[1] ""
 
-#: admin.py:106
+#: lawyerd/dbtemplates/admin.py:240
 msgid "Invalidate cache of selected templates"
 msgstr ""
 
-#: admin.py:114
+#: lawyerd/dbtemplates/admin.py:248
 #, python-format
 msgid "Cache successfully repopulated with one template."
 msgid_plural "Cache successfully repopulated with %(count)d templates."
 msgstr[0] ""
 msgstr[1] ""
 
-#: admin.py:118
+#: lawyerd/dbtemplates/admin.py:253
 msgid "Repopulate cache with selected templates"
 msgstr ""
 
-#: admin.py:130
+#: lawyerd/dbtemplates/admin.py:265
 #, python-format
 msgid "Template syntax check FAILED for %(names)s."
 msgid_plural "Template syntax check FAILED for %(count)d templates: %(names)s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: admin.py:138
+#: lawyerd/dbtemplates/admin.py:273
 #, python-format
 msgid "Template syntax OK."
 msgid_plural "Template syntax OK for %(count)d templates."
 msgstr[0] ""
 msgstr[1] ""
 
-#: admin.py:141
+#: lawyerd/dbtemplates/admin.py:277
 msgid "Check template syntax"
 msgstr ""
 
-#: admin.py:145 models.py:25
+#: lawyerd/dbtemplates/admin.py:282 lawyerd/dbtemplates/models.py:25
 msgid "sites"
 msgstr ""
 
-#: models.py:22
+#: lawyerd/dbtemplates/apps.py:7
+msgid "Database templates"
+msgstr ""
+
+#: lawyerd/dbtemplates/models.py:22
 msgid "name"
 msgstr ""
 
-#: models.py:23
+#: lawyerd/dbtemplates/models.py:23
 msgid "Example: 'flatpages/default.html'"
 msgstr ""
 
-#: models.py:24
+#: lawyerd/dbtemplates/models.py:24
 msgid "content"
 msgstr ""
 
-#: models.py:27
+#: lawyerd/dbtemplates/models.py:27
 msgid "creation date"
 msgstr ""
 
-#: models.py:29
+#: lawyerd/dbtemplates/models.py:29
 msgid "last changed"
 msgstr ""
 
-#: models.py:37
+#: lawyerd/dbtemplates/models.py:37
 msgid "template"
 msgstr ""
 
-#: models.py:38
+#: lawyerd/dbtemplates/models.py:38
 msgid "templates"
 msgstr ""

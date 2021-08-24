@@ -30,13 +30,16 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 # In Windows, this must be set to your system time zone.
 TIME_ZONE = "UTC"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = "en-us"
-LANGUAGES = [('en', 'English'), ]
+LANGUAGE_CODE = "en"
+LANGUAGES = [
+        ('en', 'English'),
+        ('ru', 'Russian'),
+        ('uk', 'Ukrainian'),
+        ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
 USE_I18N = True
-USE_I18N = False
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-l10n
 USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
@@ -81,7 +84,7 @@ THIRD_PARTY_APPS = [
     # "bootstrap_datepicker_plus",
     "widget_tweaks",
     "django_countries",
-
+    "rosetta",
     "reversion",
     "dbtemplates",
 
@@ -554,7 +557,6 @@ RECAPTCHA_PUBLIC_KEY = '6LdtJ8wZAAAAADpqttdLcOkpcvymNS3pUMkc6Q3w'
 RECAPTCHA_PRIVATE_KEY = '6LdtJ8wZAAAAADhnTQI37TEWlOYttheFMM6pXYsU'
 SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
-# Google Search
 # API_GOOGLE_SEARCH_KEY = 'AIzaSyAHr0KThwPrCDnRdpoXKSvUv-Aq7fauL8c'
 # API_GOOGLE_SEARCH_CX = '017749955569768485732:llzekgcngf1'
 
