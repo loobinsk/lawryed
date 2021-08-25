@@ -6,8 +6,10 @@ from datetime import timedelta
 from django.utils.translation import gettext_lazy as _
 # from celery.schedules import crontab
 from os import cpu_count
-
+import os
 import environ
+import logging
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ROOT_DIR = (
     environ.Path(__file__) - 3

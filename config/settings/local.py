@@ -79,60 +79,39 @@ ALLOWED_HOSTS += ['192.168.137.1', '188.225.81.176']
 #     'livereload.middleware.LiveReloadScript',
 # ]
 #
-#
 LOGGING = {
-    'disable_existing_loggers': False,
     'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
+            'format': '%(name)-12s %(levelname)-8s %(message)s'
+        },
+        'file': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+        }
+    },
     'handlers': {
         'console': {
-            # logging handler that outputs log messages to terminal
             'class': 'logging.StreamHandler',
-            'level': 'DEBUG',  # message level to be written to console
+            'formatter': 'console'
         },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'formatter': 'file',
+            'filename': 'debug.log'
+        }
     },
     'loggers': {
         '': {
-            # this sets root level logger to log debug and higher level
-            # logs to console. All other loggers inherit settings from
-            # root level logger.
-            'handlers': ['console'],
             'level': 'DEBUG',
-            'propagate': False,  # this tells logger to send logging message
-            # to its parent (will send if set to True)
-        },
-        # 'django.db': {
-        #     # django also has database level logging
-        #     'console': {
-        #         # logging handler that outputs log messages to terminal
-        #         'class': 'logging.StreamHandler',
-        #         'level': 'DEBUG',  # message level to be written to console
-        #     },
-        # },
-    },
-}
-
-LOGGING = {
-    'version': 1,
-    'filters': {
-        'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue',
-        }
-    },
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
-            'class': 'logging.StreamHandler',
-        }
-    },
-    'loggers': {
-        'django.db.backends': {
-            'level': 'DEBUG',
-            'handlers': ['console'],
+            'handlers': ['console', 'file']
         }
     }
 }
 
+
+#
 USE_I18N = False
 
 # INSTALLED_APPS += ['mail_panel']
