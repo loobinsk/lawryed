@@ -60,7 +60,7 @@ class UserCreationForm(forms.UserCreationForm):
         except User.DoesNotExist:
             return username
 
-        raise ValidationError(self.error_messages[_("duplicate_username")])
+        raise ValidationError(self.error_messages["duplicate_username"])
 
 
 class CustomSignupForm(SignupForm):
