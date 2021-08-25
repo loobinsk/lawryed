@@ -15,7 +15,7 @@
             <a href="/"
                class="list-group-item list-group-item-action bg-light {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
             <span>
-                <i class="material-icons">search</i>
+                <i class="material-icons">{% trans 'search' %}</i>
               <span>
                 {% trans "Search and History" %}
               </span>
@@ -32,7 +32,7 @@
             <a href="{% url 'profile' %}"
                class="list-group-item list-group-item-action bg-light {% if request.resolver_match.url_name == 'profile' %}active{% endif %}">
             <span>
-              <i class="material-icons">assignment_ind</i>
+              <i class="material-icons">{% trans 'assignment_ind' %}</i>
               <span>
                 {% trans "Profile" %}
               </span>
@@ -46,7 +46,7 @@
             <a href="{% url 'company' %}"
                class="list-group-item list-group-item-action bg-light {% if request.resolver_match.url_name == 'company' %}active{% endif %}">
             <span class="{% if request.resolver_match.url_name == 'oops' and not context.filled_company %}oops{% endif %}">
-                <i class="material-icons">assignment</i>
+                <i class="material-icons">{% trans 'assignment' %}</i>
               <span>
                 {% trans "Company information" %}
               </span>
@@ -90,7 +90,7 @@
             <a href="{% url 'faq' %}"
                class="list-group-item list-group-item-action bg-light {% if request.resolver_match.url_name == 'faq' %}active{% endif %}">
             <span>
-                <i class="material-icons">error</i>
+                <i class="material-icons">{% trans 'error' %}</i>
               <span>
                 {% trans "FAQ" %}
               </span>

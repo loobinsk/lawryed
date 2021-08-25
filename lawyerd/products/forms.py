@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model, forms
 from django.core.exceptions import ValidationError
 from django.forms.widgets import Input
 from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from django.forms import ModelForm, Textarea, URLInput, FileField, FileInput, CharField, TextInput, DateInput, ClearableFileInput, Form
 from allauth.account.forms import SignupForm

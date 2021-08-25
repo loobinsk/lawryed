@@ -87,13 +87,13 @@
           // Use dot notation to reference nested serializers.
           // This data: could alternatively be displayed with the serializer's ReadOnlyField as well, as seen in the minimal example.
           {
-            title: "ID",
+            title: "{% trans 'ID' %}",
             data: "id",
             width: datatable_width_id,
           },
 
           {
-            title: "Date",
+            title: "{% trans 'Date' %}",
             data: "created",
             width: datatable_width_date,
 
@@ -106,7 +106,7 @@
 
 
           {
-            title: "Type",
+            title: "{% trans 'Type' %}",
             data: "itype",
             render: function (data, type, row) {
               let res = data;
@@ -136,12 +136,12 @@
           },
 
           {
-            title: "Name",
+            title: "{% trans 'Name' %}",
             data: "name"
           },
 
           {
-            title: "document_file_name",
+            title: "{% trans 'document_file_name' %}",
             data: "document_file_name",
             visible: false,
 
@@ -149,7 +149,7 @@
 
 
           {
-            title: "Document",
+            title: "{% trans 'Document' %}",
             data: "document",
             render: function (data, type, row) {
               let res = data;
@@ -160,7 +160,7 @@
 
 
           {
-            title: "Status",
+            title: "{% trans 'Status' %}",
             data: "status",
             width: datatable_width_status,
             render: function (data, type, row) {

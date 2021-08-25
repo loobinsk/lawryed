@@ -3,6 +3,7 @@ Base settings to build other settings files upon.
 """
 
 from datetime import timedelta
+from django.utils.translation import gettext_lazy as _
 # from celery.schedules import crontab
 from os import cpu_count
 
@@ -32,9 +33,9 @@ TIME_ZONE = "UTC"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = "en"
 LANGUAGES = [
-        ('en', 'English'),
-        ('ru', 'Russian'),
-        ('uk', 'Ukrainian'),
+        ('en', _('English')),
+        ('ru', _('Russian')),
+        ('uk', _('Ukrainian')),
         ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1

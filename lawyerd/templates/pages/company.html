@@ -31,14 +31,14 @@
 
         {#  <div class="custom-file">#}
         {#    <input type="file" class="custom-file-input" id="customFile" name="myImage">#}
-        {#    <label class="custom-file-label" for="customFile">Choose image file...</label>#}
+        {#    <label class="custom-file-label" for="customFile">{% trans 'Choose image file...' %}</label>#}
         {#  </div>#}
         {##}
         {##}
         {#  <form class="form-horizontal" method="post" action="{% url 'company' %}" enctype="multipart/form-data">#}
         {#    <div class="custom-file">#}
         {#      <input type="file" class="custom-file-input" id="customFile" name="myImage">#}
-        {#      <label class="custom-file-label" for="customFile">Choose image file...</label>#}
+        {#      <label class="custom-file-label" for="customFile">{% trans 'Choose image file...' %}</label>#}
         {#    </div>#}
         {##}
         {#      {{ form.document_right|as_crispy_field }}#}

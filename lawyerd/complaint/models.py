@@ -1,6 +1,5 @@
 import os
 import uuid
-
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator
@@ -8,7 +7,7 @@ from django.db import models
 from django.db.models import F, IntegerField
 from django.db.models.expressions import Window, Case, When, Value
 from django.db.models.functions import RowNumber
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django_extensions.db.models import TimeStampedModel
 from model_utils import Choices
 

@@ -9,7 +9,7 @@ from django.core.files.storage import FileSystemStorage
 from django.db.models import CharField, EmailField
 from django.db.models.functions import Now
 from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.db import models, connection
 
 from django_extensions.db.models import TimeStampedModel
@@ -56,7 +56,7 @@ class Company(TimeStampedModel, models.Model):
 
     # address = models.CharField(max_length=200, blank=False,
     #                            verbose_name=_('Address of registration of the company owner'))
-    address_country = CountryField()
+    address_country = CountryField(verbose_name=_('address country'))
     address_city = models.CharField(max_length=200, blank=False, verbose_name=_('City'))
     address_street = models.CharField(max_length=200, blank=False, verbose_name=_('Street Address'))
     address_state = models.CharField(max_length=200, blank=False, verbose_name=_('State/Province'))
