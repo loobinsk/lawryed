@@ -78,33 +78,57 @@
                         <a class="nav-link nav-link_registration {% if request.resolver_match.url_name == 'account_signup' %}active{% endif %}"
                            href="{% url 'account_signup' %}">{% trans "Registration" %}</a>
                     </li>
-                    	<div style='margin-left: 24px;'>
-                    	  <div>{{ LANGUAGE_CODE }}</div>
-                    	  <div>
-                    			{% for language in languages %}
-                    				<a href="/{{ language.code }}/"
-                    				{% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
-                    				{{ language.name_local }}
-                    				</a>
-                    			{% endfor %}
-                    	  </div>
-                    	</div>
-                        <div class="col-auto">
-                            {% get_current_language as LANGUAGE_CODE %}
-                            {% get_available_languages as LANGUAGES %}
-                            {% get_language_info_list for LANGUAGES as languages %}
-                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                                {% for language in languages %}
-                                    <option {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                                        <a href="/{{ language.code }}/">
-                                        {{ language.name_local }}
-                                        </a>
-                                    </option>
-                                {% endfor %}
-                            </select>
-                        </div>
-		           </li>
+		    <li>
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+<div class="container-language">
+      <div class="dropdown-language">
+        <div class="select">
+          <span>
+          {{ LANGUAGE_CODE }}
+          	{% if 'ru' in LANGUAGE_CODE %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/320px-Flag_of_Russia.svg.png">
+          	{% elif 'uk' in LANGUAGE_CODE %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Ukraine.png">
+		{% elif 'en' in LANGUAGE_CODE %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://pngicon.ru/file/uploads/Flag-SShA.png">
+          	{% elif 'es' in LANGUAGE_CODE%}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://pngimg.com/uploads/flags/flags_PNG14653.png">
+          	{% endif %}
+       	 </span>
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <input type="hidden" name="gender">
+        <ul class="dropdown-menu">
+        	{% for language in languages %}
+          <a href="/{{ language.code }}/">
+          	<li id="male">
+          	{{ language.code }}
+          	{% if 'ru' in language.code %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/320px-Flag_of_Russia.svg.png">
+          	{% elif 'uk' in language.code %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Ukraine.png">
+		{% elif 'en' in language.code %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://pngicon.ru/file/uploads/Flag-SShA.png">
+          	{% elif 'es' in language.code %}
+          		<img style="width: 20px; margin-left: 5px;"
+          		src="https://pngimg.com/uploads/flags/flags_PNG14653.png">
+          	{% endif %}
+          	</li>
+          </a>
+         {% endfor %}
+        </ul>
+      </div>
+</div>
+		    </li>
 
                 </ul>
 
@@ -115,3 +139,16 @@
         </div>
     </nav>
 </header>
+  <script type="text/javascript">
+  /*Dropdown Menu*/
+$('.dropdown-language').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+    });
+    $('.dropdown-language .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown-language').find('span').text($(this).text());
+        $(this).parents('.dropdown-language').find('input').attr('value', $(this).attr('id'));
+    });
+/*End Dropdown Menu*/
+  </script>
