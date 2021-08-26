@@ -21,8 +21,8 @@
     <div id="top">
         <div class="top_text">
             <h1>{% trans 'More time' %}<br>{% trans 'for your business, <br> less for routine' %}</h1>
-            <p> {% trans 'You can defend your copyright on your own.<br>
-                No third parties are involved.' %}</p>
+	    <p> {% trans 'You can defend your copyright on your own.' %}<br>
+	    {% trans 'No third parties are involved.' %}</p>
             <a type="" class="top_modal_a" data-toggle="modal" data-target="#Get_in_touch">
                 {% trans 'Try for free' %}
             </a>
@@ -156,9 +156,10 @@
         <h2>{% trans 'Makes it faster.<br>Does more' %}</h2>
         <div class="row">
             <div class="col-md-6 col-sm-12 automated_service__left">
-                <p>
-                    {% trans 'Our service works 24/7 and can help you with any scope of workload due to complete automation. It
-                        ensures that your intellectual property rights are protected from unauthorized use on the Internet.' %}
+		    <p>{% blocktrans %}
+                    Our service works 24/7 and can help you with any scope of workload due to complete automation. It
+                        ensures that your intellectual property rights are protected from unauthorized use on the Internet.
+			{% endblocktrans %}
                 </p>
             </div>
             <div class="col-md-6 col-sm-12 automated_service__right">
