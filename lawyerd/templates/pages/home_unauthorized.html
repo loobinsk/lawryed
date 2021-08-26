@@ -102,7 +102,7 @@
                             <div class="modal-footer modal-footer_touch">
                                 <button type="button" class="btn btn_cancel"
                                         onclick="document.location.reload();">
-                                    {%trans 'Close' %}
+                                    {% trans 'Close' %}
                                 </button>
                             </div>
                         </div>
@@ -156,17 +156,22 @@
         <h2>{% trans 'Makes it faster.<br>Does more' %}</h2>
         <div class="row">
             <div class="col-md-6 col-sm-12 automated_service__left">
+<<<<<<< HEAD
 		    <p>{% blocktrans %}
                     Our service works 24/7 and can help you with any scope of workload due to complete automation. It
                         ensures that your intellectual property rights are protected from unauthorized use on the Internet.
 			{% endblocktrans %}
+=======
+                <p>
+                    {% trans 'Our service works 24/7 and can help you with any scope of workload due to complete automation. It' %}
+                        {% trans 'ensures that your intellectual property rights are protected from unauthorized use on the Internet.' %}
+>>>>>>> b22b38d74b0a24b73ba21af9da377982be57e66f
                 </p>
             </div>
             <div class="col-md-6 col-sm-12 automated_service__right">
                 <p>
-                    {% trans
-                        'You will get the most out of your online income stream. The service itself finds and removes any
-                        content infringing the copyright.' %}
+                    {% trans 'You will get the most out of your online income stream. The service itself finds and removes any' %}
+                        {% trans 'content infringing the copyright.' %}
                 </p>
             </div>
         </div>
@@ -198,8 +203,7 @@
     <div id="free">
         <h3>{% trans 'Trial version' %}</h3>
         <h2>{% trans 'Free' %}</h2>
-        <p>{% trans 'Get the opportunity to file up to 5 complaints of intellectual property' %}<br> {% trans 'infringement and get access to
-            information about the claims in your' %} <br>{% trans 'personal profile' %}</p>
+        <p>{% trans 'Get the opportunity to file up to 5 complaints of intellectual property' %}<br> {% trans 'infringement and get access to information about the claims in your' %} <br>{% trans 'personal profile' %}</p>
         <button class="free_button" data-toggle="modal" data-target="#Get_in_touch"> {% trans 'Try it now' %}</button>
 
     </div>
@@ -209,23 +213,27 @@
         <div class="row">
             <div class="col-6 more_about__left">
                 <p>
-                    {% trans 'Humanity is developing, every day new products and services have created the world, in connection
+                    {% blocktrans %}
+                    Humanity is developing, every day new products and services have created the world, in connection
                     with these processes, the value of originality and novelty is increasing more and more, which makes
                     it possible for one product to differ from another and to present its competitive advantages more
                     clearly.
                     However, the number of intellectual infringements also increasing in these conditions. Annual losses
-                    from piracy for different business categories ranging from 20% to 35% of net profit loss.' %}
+                    from piracy for different business categories ranging from 20% to 35% of net profit loss.
+                    {% endblocktrans %}
                 </p>
             </div>
             <div class="col-6 more_about__right">
                 <p>
-                    {% trans 'So, why we are here?
+                    {% blocktrans %}
+                    So, why we are here?
                     Lawyerd! helps businesses and individuals protect their intellectual property rights, save and
                     multiply online revenue streams.
                     We simplify the process of IP protection, so our clients only have to specify information about the
                     rightsholder and product, system automatically provides full protection on the Internet you even do
                     not have to think about it.
-                    Create the best version of your product and leave the rest to us.' %}
+                    Create the best version of your product and leave the rest to us.
+                    {% endblocktrans %}
                 </p>
             </div>
         </div>
@@ -242,11 +250,13 @@
                 <input id="tab_1" type="checkbox" name="tabs">
                 <label for="tab_1">{% trans 'How to start using Lawyerd!?' %}</label>
                 <div class="tab-content">
-                    <p>{% trans 'To use Lawyerd! you need to go through general registration and enter the required information in
+                    <p>{% blocktrans %}
+                        To use Lawyerd! you need to go through general registration and enter the required information in
                         the "Company Information" column. After that, you must indicate the name of the product and a
                         document confirming your rights to the TM. It is also important to choose the tariff plan you
                         are interested in. As soon as we check the information provided by you for compliance with the
-                        formal requirements, we will contact you using the communication channels you specified.' %}
+                        formal requirements, we will contact you using the communication channels you specified.
+                        {% endblocktrans %}
                     </p>
                 </div>
             </div>
@@ -258,17 +268,14 @@
                     <p>{% trans 'Contact us via the' %}
                         <a type="" class="top_modal_a" style="font-size: 17px!important;" data-toggle="modal"
                            data-target="#Get_in_touch">
-                            {% trans 'form' %}</a>, {% trans 'write to us by mail or Telegram. We will contact you within 5
-                        minutes.' %}' </p>
+                            {% trans 'form' %}</a>, {% trans 'write to us by mail or Telegram. We will contact you within 5 minutes.' %}' </p>
                 </div>
             </div>
             <div class="tab">
                 <input id="tab_3" type="checkbox" name="tabs">
-                <label for="tab_3">{% trans 'How quickly is the process of blocking resources infringing intellectual property
-                    rights?' %}' </label>
+                <label for="tab_3">{% trans 'How quickly is the process of blocking resources infringing intellectual property rights?' %}' </label>
                 <div class="tab-content">
-                    <p>{% trans 'It depends on how quickly the authorized person answers. On average, 1-5 days pass from the
-                        moment of filing a complaint to the moment of blocking.' %} </p>
+                    <p>{% trans 'It depends on how quickly the authorized person answers. On average, 1-5 days pass from the moment of filing a complaint to the moment of blocking.' %} </p>
                 </div>
             </div>
 
@@ -276,8 +283,7 @@
                 <input id="tab_4" type="checkbox" name="tabs">
                 <label for="tab_4">{% trans 'What objects of intellectual property you can protect?' %} </label>
                 <div class="tab-content">
-                    <p>{% trans 'We protect logos, images, videos, music, texts, games, software, and other objects of which you
-                        are the copyright holder.' %} </p>
+                    <p>{% trans 'We protect logos, images, videos, music, texts, games, software, and other objects of which you are the copyright holder.' %} </p>
                 </div>
             </div>
 
@@ -285,8 +291,7 @@
                 <input id="tab_5" type="checkbox" name="tabs">
                 <label for="tab_5">{% trans 'What information is needed to file a complaint?' %} </label>
                 <div class="tab-content">
-                    <p>{% trans 'We ask you to provide information about the copyright holder and the authorized person. Also,
-                        provide a link to the offending resource. You can contact us for clarification.' %} </p>
+                    <p>{% trans 'We ask you to provide information about the copyright holder and the authorized person. Also, provide a link to the offending resource. You can contact us for clarification.' %} </p>
                 </div>
             </div>
         </div>
