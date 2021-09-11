@@ -51,7 +51,7 @@
 
 
   <div>
-{#    <p class="gray_text">{% blocktrans %}You can enter a set of keywords separated by commas. If you know about a infringement by a particular site just enter a link to the search. It is also important to choose the right product which relates to tags{% endblocktrans %}</p>#}
+{#    <p class="gray_text">{% trans "You can enter a set of keywords separated by commas. If you know about a infringement by a particular site just enter a link to the search. It is also important to choose the right product which relates to tags" %}</p>#}
     <p class="gray_text">{% trans "It is also important to choose the right product which has to be protected." %}</p>
     {#    <p class="gray_text">{% trans "You can enter a set of keywords separated by commas. If you know about a violation by a particular site just enter a link to it. It's also important to choose a product that relates to tags so that the complaints is correct." %}</p>#}
 
@@ -172,8 +172,6 @@
               data: "email",
               className: 'td__email'
           },
-
-
           {
               title: "site_count",
               data: "site_count",
@@ -207,7 +205,6 @@
                                             <div class="bar-wrap">
                                               <span class="bar-fill" style="width: ${row['status_value']}%;"></span>
                                             </div>
-
                                             ${ButtonCancel}
                                             ${ButtonDetail}
                                           </li>
@@ -264,7 +261,6 @@
                               title: "order_id",
                               data: "order_id",
                           },
-
            */
 
 
@@ -298,7 +294,6 @@
               data: "hosting",
               className: 'td__hosting'
           },
-
           {
               title: "abuse email",
               data: "email",

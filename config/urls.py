@@ -15,9 +15,10 @@ from lawyerd.users.views import company_update_view
 
 schema_view = get_swagger_view(title='Lawyerd API')
 
-urlpatterns = i18n_patterns(
+urlpatterns = [
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
+        i18n_patterns(
         path('rosetta/', include('rosetta.urls')),
         # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
         path("", view=home_view, name="home"),
@@ -60,8 +61,8 @@ urlpatterns = i18n_patterns(
 
         path('feedback/', include('feedback.urls')),
         # path('feedback/', view=company_update_view),
-
-    ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+        )
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

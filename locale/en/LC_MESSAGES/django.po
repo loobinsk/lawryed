@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 17:28+0000\n"
+"POT-Creation-Date: 2021-08-30 14:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,82 +18,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lawyerd/complaint/models.py:23 lawyerd/products/models.py:13
+#: config/settings/base.py:38
+msgid "English"
+msgstr ""
+
+#: config/settings/base.py:39
+msgid "Russian"
+msgstr ""
+
+#: config/settings/base.py:40
+msgid "Ukrainian"
+msgstr ""
+
+#: lawyerd/complaint/forms.py:7
+msgid "Enter e-mail"
+msgstr ""
+
+#: lawyerd/complaint/forms.py:8
+msgid "Enter e-mail count"
+msgstr ""
+
+#: lawyerd/complaint/models.py:22 lawyerd/products/models.py:13
 msgid "waiting"
 msgstr ""
 
-#: lawyerd/complaint/models.py:24
+#: lawyerd/complaint/models.py:23
 msgid "processing"
 msgstr ""
 
-#: lawyerd/complaint/models.py:25
+#: lawyerd/complaint/models.py:24
 msgid "ok"
 msgstr ""
 
-#: lawyerd/complaint/models.py:26 lawyerd/products/models.py:16
+#: lawyerd/complaint/models.py:25 lawyerd/products/models.py:16
 msgid "cancelled"
 msgstr ""
 
-#: lawyerd/complaint/models.py:28
+#: lawyerd/complaint/models.py:27
 msgid "error"
 msgstr ""
 
-#: lawyerd/complaint/models.py:49
+#: lawyerd/complaint/models.py:48
 msgid "User"
 msgstr ""
 
-#: lawyerd/complaint/models.py:50
+#: lawyerd/complaint/models.py:49
 msgid "Product"
 msgstr ""
 
-#: lawyerd/complaint/models.py:51
+#: lawyerd/complaint/models.py:50
 msgid "Search text"
 msgstr ""
 
-#: lawyerd/complaint/models.py:52
+#: lawyerd/complaint/models.py:51
 msgid "Email to send abuse"
 msgstr ""
 
-#: lawyerd/complaint/models.py:54
+#: lawyerd/complaint/models.py:53
 msgid "Count"
 msgstr ""
 
-#: lawyerd/complaint/models.py:55 lawyerd/complaint/models.py:133
+#: lawyerd/complaint/models.py:54 lawyerd/complaint/models.py:132
+#: lawyerd/templates/pages/products.html:163
 msgid "Status"
 msgstr ""
 
-#: lawyerd/complaint/models.py:56
+#: lawyerd/complaint/models.py:55
 msgid "Finish task Datetime "
 msgstr ""
 
-#: lawyerd/complaint/models.py:127
+#: lawyerd/complaint/models.py:126
+#: lawyerd/templates/pages/home_unauthorized.html:144
 msgid "Complaint"
 msgstr ""
 
-#: lawyerd/complaint/models.py:128
+#: lawyerd/complaint/models.py:127
 msgid "Complaint URL"
 msgstr ""
 
-#: lawyerd/complaint/models.py:129
+#: lawyerd/complaint/models.py:128
 msgid "Complaint hosting"
 msgstr ""
 
-#: lawyerd/complaint/models.py:130 lawyerd/feedback/models.py:15
+#: lawyerd/complaint/models.py:129 lawyerd/feedback/models.py:15
 #: lawyerd/users/forms.py:82
 msgid "Email"
 msgstr ""
 
-#: lawyerd/complaint/models.py:132
+#: lawyerd/complaint/models.py:131
 #: lawyerd/templates/pages/_home_authorized_js.html:21
 #: lawyerd/templates/pages/home_authorized.html:118
 msgid "Screenshot"
 msgstr ""
 
-#: lawyerd/complaint/models.py:134
+#: lawyerd/complaint/models.py:133
 msgid "Template name"
 msgstr ""
 
-#: lawyerd/feedback/models.py:14
+#: lawyerd/feedback/models.py:14 lawyerd/templates/pages/products.html:139
 msgid "Name"
 msgstr ""
 
@@ -157,6 +179,36 @@ msgstr ""
 
 #: lawyerd/products/models.py:55
 msgid "Type of product"
+msgstr ""
+
+#: lawyerd/templates/403.html:10
+msgid "Forbidden (403)"
+msgstr ""
+
+#: lawyerd/templates/403.html:12
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: lawyerd/templates/404.html:7
+msgid "Page not found"
+msgstr ""
+
+#: lawyerd/templates/500.html:7
+msgid "Server Error"
+msgstr ""
+
+#: lawyerd/templates/500.html:10
+msgid "Ooops!!! 500"
+msgstr ""
+
+#: lawyerd/templates/500.html:12
+msgid "Looks like something went wrong!"
+msgstr ""
+
+#: lawyerd/templates/500.html:14
+msgid ""
+"We track these errors automatically, but if the problem persists feel free "
+"to contact us. In the meantime, try refreshing."
 msgstr ""
 
 #: lawyerd/templates/account/account_inactive.html:5
@@ -251,8 +303,7 @@ msgstr ""
 
 #: lawyerd/templates/account/login.html:7
 #: lawyerd/templates/account/login.html:13
-#: lawyerd/templates/account/login.html:46 lawyerd/templates/header.html:77
-#: lawyerd/templates/header.html:174
+#: lawyerd/templates/account/login.html:46 lawyerd/templates/header.html:75
 msgid "Login"
 msgstr ""
 
@@ -301,7 +352,8 @@ msgstr ""
 msgid "Change Password"
 msgstr ""
 
-#: lawyerd/templates/account/password_change.html:39 lawyerd/users/forms.py:284
+#: lawyerd/templates/account/password_change.html:39
+#: lawyerd/templates/users/user_form.html:13 lawyerd/users/forms.py:284
 msgid "Update"
 msgstr ""
 
@@ -361,8 +413,8 @@ msgstr ""
 
 #: lawyerd/templates/account/signup.html:6
 #: lawyerd/templates/account/signup.html:13
-#: lawyerd/templates/account/signup.html:46 lawyerd/templates/header.html:81
-#: lawyerd/templates/header.html:178 lawyerd/users/forms.py:132
+#: lawyerd/templates/account/signup.html:46 lawyerd/templates/header.html:79
+#: lawyerd/users/forms.py:132
 msgid "Registration"
 msgstr ""
 
@@ -410,51 +462,55 @@ msgid ""
 "mail address</a>."
 msgstr ""
 
-#: lawyerd/templates/base.html:254 lawyerd/templates/base_old.html:148
+#: lawyerd/templates/base.html:256 lawyerd/templates/base_old.html:148
 msgid "You request in progress"
 msgstr ""
 
-#: lawyerd/templates/base.html:254 lawyerd/templates/base_old.html:148
+#: lawyerd/templates/base.html:256 lawyerd/templates/base_old.html:148
 msgid "Please wait"
 msgstr ""
 
-#: lawyerd/templates/header.html:23 lawyerd/templates/header.html:113
+#: lawyerd/templates/footer.html:25
+msgid "Find out more"
+msgstr ""
+
+#: lawyerd/templates/footer.html:26 lawyerd/templates/header.html:51
+#: lawyerd/templates/pages/home_unauthorized.html:64
+msgid "Contact us"
+msgstr ""
+
+#: lawyerd/templates/footer.html:27
+msgid "email"
+msgstr ""
+
+#: lawyerd/templates/footer.html:28
+msgid "telegram"
+msgstr ""
+
+#: lawyerd/templates/header.html:23
 msgid "Admin"
 msgstr ""
 
-#: lawyerd/templates/header.html:30 lawyerd/templates/header.html:120
+#: lawyerd/templates/header.html:30
 msgid "API"
 msgstr ""
 
-#: lawyerd/templates/header.html:37 lawyerd/templates/header.html:127
+#: lawyerd/templates/header.html:37
 msgid "SQL"
 msgstr ""
 
-#: lawyerd/templates/header.html:49 lawyerd/templates/header.html:66
-#: lawyerd/templates/header.html:139 lawyerd/templates/header.html:157
-#: lawyerd/templates/header.html:163
+#: lawyerd/templates/header.html:46 lawyerd/templates/header.html:64
+#: lawyerd/templates/plans/pricing2.html:4
 #: lawyerd/templates/plans/pricing_original.html:6
 msgid "Pricing"
 msgstr ""
 
-#: lawyerd/templates/header.html:53 lawyerd/templates/header.html:144
-msgid "Contact us"
-msgstr ""
-
-#: lawyerd/templates/header.html:58 lawyerd/templates/header.html:149
+#: lawyerd/templates/header.html:56
 msgid "Logout"
 msgstr ""
 
-#: lawyerd/templates/header.html:70 lawyerd/templates/header.html:169
+#: lawyerd/templates/header.html:70
 msgid "About us"
-msgstr ""
-
-#: lawyerd/templates/header.html:182
-msgid "Главная"
-msgstr ""
-
-#: lawyerd/templates/header.html:187
-msgid "Языки"
 msgstr ""
 
 #: lawyerd/templates/pages/_______home_unauthorized_search_form_inline.html:7
@@ -471,7 +527,7 @@ msgstr ""
 
 #: lawyerd/templates/pages/_______pricing.html:5
 #: lawyerd/templates/plans/pricing.html:5
-#: lawyerd/templates/plans/pricing_.html:5 lawyerd/templates/side_bar.html:81
+#: lawyerd/templates/plans/pricing_.html:5 lawyerd/templates/side_bar.html:77
 msgid "Payment plan"
 msgstr ""
 
@@ -479,6 +535,7 @@ msgstr ""
 #: lawyerd/templates/pages/_home_authorized_js.html:8
 #: lawyerd/templates/pages/home_authorized.html:104
 #: lawyerd/templates/pages/home_authorized.html:105
+#: lawyerd/templates/pages/home_unauthorized.html:84
 msgid "Cancel"
 msgstr ""
 
@@ -493,7 +550,7 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
-#: lawyerd/templates/pages/company.html:14 lawyerd/templates/side_bar.html:51
+#: lawyerd/templates/pages/company.html:14 lawyerd/templates/side_bar.html:48
 msgid "Company information"
 msgstr ""
 
@@ -501,12 +558,12 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: lawyerd/templates/pages/faq.html:6 lawyerd/templates/side_bar.html:95
+#: lawyerd/templates/pages/faq.html:6 lawyerd/templates/side_bar.html:90
 msgid "FAQ"
 msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:4
-#: lawyerd/templates/side_bar.html:20
+#: lawyerd/templates/side_bar.html:19
 msgid "Search and History"
 msgstr ""
 
@@ -555,8 +612,305 @@ msgstr ""
 msgid "Click Detail to view details of complaint"
 msgstr ""
 
+#: lawyerd/templates/pages/home_unauthorized.html:23
+msgid "More time"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:23
+msgid "for your business, <br> less for routine"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:24
+msgid "You can defend your copyright on your own."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:25
+msgid "No third parties are involved."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:27
+msgid "Try for free"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:43
+msgid "Process"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:44
+msgid "How it <br> works"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:45
+msgid "We work in all jurisdictions worldwide"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:65
+msgid "Get in touch"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:66
+msgid "Leave us your details and we will contact you as soon as possible"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:80
+msgid "Send"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:100
+msgid "Excellent!"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:101
+msgid "We will contact you as soon as possible"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:105
+msgid "Close"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:121
+msgid "Powerful and easy to handle"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:122
+msgid "Copyright protection <br> in three steps"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:127
+msgid "STEP 1"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:128
+msgid "Indicate"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:129
+msgid "The system automatically fulfill the complaint template"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:130
+msgid "The system automatically adds right holder documentation"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:135
+msgid "STEP 2"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:136
+msgid "Find"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:137
+msgid ""
+"The system automatically finds out responsible for content hosting bodies"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:138
+msgid "The system automatically finds out means of communication"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:143
+msgid "STEP 3"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:145
+msgid "The system automatically adds evidence of infringement"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:146
+msgid ""
+"The system automatically makes the report and collects information about the "
+"particular case"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:155
+msgid "Automated service"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:156
+msgid "Makes it faster.<br>Does more"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:159
+msgid ""
+"\n"
+"                    Our service works 24/7 and can help you with any scope "
+"of workload due to complete automation. It\n"
+"                        ensures that your intellectual property rights are "
+"protected from unauthorized use on the Internet.\n"
+"\t\t\t"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:166
+msgid ""
+"You will get the most out of your online income stream. The service itself "
+"finds and removes any"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:167
+msgid "content infringing the copyright."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:176
+msgid ""
+"28 times cheaper than any practicing lawyer, who protects your intellectual "
+"property"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:183
+msgid "Seconds takes per complaint on average"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:191
+msgid "7 times faster than regular services provided by lawyers"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:197
+msgid "Trial version"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:198
+msgid "Free"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:199
+msgid "Get the opportunity to file up to 5 complaints of intellectual property"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:199
+msgid "infringement and get access to information about the claims in your"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:199
+msgid "personal profile"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:200
+msgid "Try it now"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:204
+msgid "MORE ABOUT"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:209
+#, python-format
+msgid ""
+"\n"
+"                    Humanity is developing, every day new products and "
+"services have created the world, in connection\n"
+"                    with these processes, the value of originality and "
+"novelty is increasing more and more, which makes\n"
+"                    it possible for one product to differ from another and "
+"to present its competitive advantages more\n"
+"                    clearly.\n"
+"                    However, the number of intellectual infringements also "
+"increasing in these conditions. Annual losses\n"
+"                    from piracy for different business categories ranging "
+"from 20%% to 35%% of net profit loss.\n"
+"                    "
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:221
+msgid ""
+"\n"
+"                    So, why we are here?\n"
+"                    Lawyerd! helps businesses and individuals protect their "
+"intellectual property rights, save and\n"
+"                    multiply online revenue streams.\n"
+"                    We simplify the process of IP protection, so our clients "
+"only have to specify information about the\n"
+"                    rightsholder and product, system automatically provides "
+"full protection on the Internet you even do\n"
+"                    not have to think about it.\n"
+"                    Create the best version of your product and leave the "
+"rest to us.\n"
+"                    "
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:238
+msgid "Frequently asked <br>questions"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:239
+msgid "Have a question? Leave your details and we <br> will tell you"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:244
+msgid "How to start using Lawyerd!?"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:246
+msgid ""
+"\n"
+"                        To use Lawyerd! you need to go through general "
+"registration and enter the required information in\n"
+"                        the \"Company Information\" column. After that, you "
+"must indicate the name of the product and a\n"
+"                        document confirming your rights to the TM. It is "
+"also important to choose the tariff plan you\n"
+"                        are interested in. As soon as we check the "
+"information provided by you for compliance with the\n"
+"                        formal requirements, we will contact you using the "
+"communication channels you specified.\n"
+"                        "
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:259
+msgid "How could I purchase the service or get a trial period?"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:261
+msgid "Contact us via the"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:264
+msgid "form"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:264
+msgid "write to us by mail or Telegram. We will contact you within 5 minutes."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:269
+msgid ""
+"How quickly is the process of blocking resources infringing intellectual "
+"property rights?"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:271
+msgid ""
+"It depends on how quickly the authorized person answers. On average, 1-5 "
+"days pass from the moment of filing a complaint to the moment of blocking."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:277
+msgid "What objects of intellectual property you can protect?"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:279
+msgid ""
+"We protect logos, images, videos, music, texts, games, software, and other "
+"objects of which you are the copyright holder."
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:285
+msgid "What information is needed to file a complaint?"
+msgstr ""
+
+#: lawyerd/templates/pages/home_unauthorized.html:287
+msgid ""
+"We ask you to provide information about the copyright holder and the "
+"authorized person. Also, provide a link to the offending resource. You can "
+"contact us for clarification."
+msgstr ""
+
 #: lawyerd/templates/pages/oops.html:5
 msgid "Ooops!"
+msgstr ""
+
+#: lawyerd/templates/pages/oops.html:8
+msgid "Oooups!"
 msgstr ""
 
 #: lawyerd/templates/pages/oops.html:10
@@ -570,7 +924,7 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: lawyerd/templates/pages/products.html:8 lawyerd/templates/side_bar.html:67
+#: lawyerd/templates/pages/products.html:8 lawyerd/templates/side_bar.html:63
 msgid "Products"
 msgstr ""
 
@@ -598,36 +952,157 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
+#: lawyerd/templates/pages/products.html:90
+msgid "ID"
+msgstr ""
+
+#: lawyerd/templates/pages/products.html:96
+msgid "Date"
+msgstr ""
+
+#: lawyerd/templates/pages/products.html:109
+msgid "Type"
+msgstr ""
+
+#: lawyerd/templates/pages/products.html:144
+msgid "document_file_name"
+msgstr ""
+
+#: lawyerd/templates/pages/products.html:152
+msgid "Document"
+msgstr ""
+
 #: lawyerd/templates/pages/terms.html:6
 msgid "Terms of Use"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:25
+#: lawyerd/templates/plans/pricing2.html:5
+msgid "Suitable for defending new business."
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:6
+msgid "Suitable for defending big fish`s products"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:7
+msgid "Choose the one that suits you"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:12
+msgid "Do it yourself"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:13
+msgid "For creative individuals and small teams"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:15
+msgid "10 complaint for IP infringement"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:16
+#: lawyerd/templates/plans/pricing2.html:37
+#: lawyerd/templates/plans/pricing2.html:65
+msgid "Access for information about claims in personal profile"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:18
+msgid ""
+"Help in the process of filling the necessary information for sending "
+"complaint"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:27
+#: lawyerd/templates/plans/pricing2.html:48
+msgid "CONTACT US"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:30
+msgid "Lawyers support regime"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:32
+msgid ""
+"For in-house lawyers or Law firm which provides services for the "
+"rightsholders"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:35
+#: lawyerd/templates/plans/pricing2.html:56
+msgid "Unlimited complaints"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:36
+msgid "Monthly report"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:39
+#: lawyerd/templates/plans/pricing2.html:57
+msgid "Further communication with authorized persons"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:51
+msgid "Full product Protection"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:53
+msgid "Full IP protection services"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:55
+msgid "Everyday products monitoring"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:59
+msgid ""
+"Services for removing any\n"
+"                        kind of infringement of\n"
+"                        intellectual property rights\n"
+"                        on the Internet"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing2.html:67
+msgid "Unique deleting services"
+msgstr ""
+
+#: lawyerd/templates/plans/pricing_original.html:28
+msgid "Contact support"
+msgstr ""
+
+#: lawyerd/templates/side_bar.html:24
 msgid "Specify the infringing resource "
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:37
+#: lawyerd/templates/side_bar.html:35
 msgid "Profile"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:41
+#: lawyerd/templates/side_bar.html:39
 msgid "Your profile settings"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:55
+#: lawyerd/templates/side_bar.html:52
 msgid "Information about the company is vital for completing your complaints"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:71
+#: lawyerd/templates/side_bar.html:67
 msgid "The details of your products and trademarks that apply to them"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:85
+#: lawyerd/templates/side_bar.html:81
 msgid "Choose you plan"
 msgstr ""
 
-#: lawyerd/templates/side_bar.html:99
+#: lawyerd/templates/side_bar.html:94
 msgid "Answers to the most frequently asked questions"
+msgstr ""
+
+#: lawyerd/templates/users/user_detail.html:24
+msgid "My Info"
+msgstr ""
+
+#: lawyerd/templates/users/user_detail.html:25
+msgid "E-Mail"
 msgstr ""
 
 #: lawyerd/users/apps.py:7
@@ -668,6 +1143,10 @@ msgstr ""
 
 #: lawyerd/users/models.py:55
 msgid "Position of the represenatative/position/title"
+msgstr ""
+
+#: lawyerd/users/models.py:59
+msgid "address country"
 msgstr ""
 
 #: lawyerd/users/models.py:60
