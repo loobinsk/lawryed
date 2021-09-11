@@ -15,28 +15,10 @@ from lawyerd.users.views import company_update_view
 
 schema_view = get_swagger_view(title='Lawyerd API')
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
         path('rosetta/', include('rosetta.urls')),
-        # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
-
-        path("oops/", view=oops_view, name="oops"),
-
-        # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
-
-        # path("pricing_old/", TemplateView.as_view(template_name="pages/pricing.html"), name="pricing_old"),
-
-        # Django Admin, use {% url 'admin:index' %}
-        path(settings.ADMIN_URL, admin.site.urls),
-
-        # User management
-        path('api/v1/', include('api.v1.urls')),
-        # path('feedback/', view=company_update_view),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-urlpatterns = += i18n_patterns(
-        # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
         path("", view=home_view, name="home"),
         path("faq/", TemplateView.as_view(template_name="pages/faq.html"), name="faq"),
@@ -47,6 +29,10 @@ urlpatterns = += i18n_patterns(
 
         path("terms/", TemplateView.as_view(template_name="pages/terms.html"), name="terms"),
         path("policy/", TemplateView.as_view(template_name="pages/policy.html"), name="policy"),
+
+
+
+        path("oops/", view=oops_view, name="oops"),
 
         # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
         path("profile/", password_change, {'template_name': 'account/password_change.html', }, name="profile"),
@@ -67,13 +53,15 @@ urlpatterns = += i18n_patterns(
 
         path('products/', include('products.urls')),
         path('orders/', include('complaint.urls')),
+        path('api/v1/', include('api.v1.urls')),
 
         path('plans-payments/', include('plans_payments.urls')),
         path('plan/', include('plans.urls')),
 
         path('feedback/', include('feedback.urls')),
         # path('feedback/', view=company_update_view),
-        )
+
+    ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
