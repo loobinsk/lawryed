@@ -18,29 +18,10 @@ schema_view = get_swagger_view(title='Lawyerd API')
 urlpatterns = [
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
-        path('api/v1/', include('api.v1.urls')),
-        # path('feedback/', view=company_update_view),
-
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-urlpatterns += i18n_patterns(
-        path('rosetta/', include('rosetta.urls')),
-        # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
         path("", view=home_view, name="home"),
-        path("faq/", TemplateView.as_view(template_name="pages/faq.html"), name="faq"),
-        path("about_us/", TemplateView.as_view(template_name="pages/about_us.html"), name="about_us"),
-        path("contact_us/", TemplateView.as_view(template_name="pages/contact_us.html"), name="contact_us"),
-
-
-
-        path("terms/", TemplateView.as_view(template_name="pages/terms.html"), name="terms"),
-        path("policy/", TemplateView.as_view(template_name="pages/policy.html"), name="policy"),
-
-
-
-        path("oops/", view=oops_view, name="oops"),
-
-        # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
+        path('api/v1/', include('api.v1.urls')),
+        path("users/", include("users.urls", namespace="users")),
+        path("accounts/", include("allauth.urls")),
         path("profile/", password_change, {'template_name': 'account/password_change.html', }, name="profile"),
 
         path("company/", view=company_update_view, name="company"),
@@ -50,21 +31,29 @@ urlpatterns += i18n_patterns(
         # Django Admin, use {% url 'admin:index' %}
         path(settings.ADMIN_URL, admin.site.urls),
 
-        # User management
-        path("users/", include("users.urls", namespace="users")),
-        path("accounts/", include("allauth.urls")),
-
         # Your stuff: custom urls includes go here
         path('explorer/', include('explorer.urls')),
 
         path('products/', include('products.urls')),
         path('orders/', include('complaint.urls')),
-
+        path('feedback/', include('feedback.urls')),
         path('plans-payments/', include('plans_payments.urls')),
         path('plan/', include('plans.urls')),
+        # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"), 
+        # path('feedback/', view=company_update_view),
 
-        path('feedback/', include('feedback.urls')),
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+urlpatterns += i18n_patterns(
+        path('rosetta/', include('rosetta.urls')),
+        # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
+        path("terms/", TemplateView.as_view(template_name="pages/terms.html"), name="terms"),  
+        path("policy/", TemplateView.as_view(template_name="pages/policy.html"), name="policy"),
+        # User management
+        path("faq/", TemplateView.as_view(template_name="pages/faq.html"), name="faq"),  
+        path("about_us/", TemplateView.as_view(template_name="pages/about_us.html"), name="about_us"),  
+        path("contact_us/", TemplateView.as_view(template_name="pages/contact_us.html"), name="contact_us"),
+        path("oops/", view=oops_view, name="oops"),
     )
 
 if settings.DEBUG:
