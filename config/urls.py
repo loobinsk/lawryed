@@ -18,10 +18,33 @@ schema_view = get_swagger_view(title='Lawyerd API')
 urlpatterns = [
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
+<<<<<<< HEAD
         path("", view=home_view, name="home"),
         path('api/v1/', include('api.v1.urls')),
         path("users/", include("users.urls", namespace="users")),
         path("accounts/", include("allauth.urls")),
+=======
+        path('api/v1/', include('api.v1.urls')),
+        path("oops/", view=oops_view, name="oops"),
+        # path('feedback/', view=company_update_view),
+
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += i18n_patterns(
+        path('rosetta/', include('rosetta.urls')),
+        # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+        path("", view=home_view, name="home"),
+        path("faq/", TemplateView.as_view(template_name="pages/faq.html"), name="faq"),
+        path("about_us/", TemplateView.as_view(template_name="pages/about_us.html"), name="about_us"),
+        path("contact_us/", TemplateView.as_view(template_name="pages/contact_us.html"), name="contact_us"),
+
+
+
+        path("terms/", TemplateView.as_view(template_name="pages/terms.html"), name="terms"),
+        path("policy/", TemplateView.as_view(template_name="pages/policy.html"), name="policy"),
+
+        # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
+>>>>>>> c8fa8806f6ba7e69e0a9ad2a011318c9a57a10ab
         path("profile/", password_change, {'template_name': 'account/password_change.html', }, name="profile"),
 
         path("company/", view=company_update_view, name="company"),
