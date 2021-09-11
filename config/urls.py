@@ -19,6 +19,7 @@ urlpatterns = [
         # path('capture/',  include('screamshot.urls', namespace='screamshot'), name='screamshot'),
         path('api/', schema_view, name='swagger'),
         path('api/v1/', include('api.v1.urls')),
+        path("oops/", view=oops_view, name="oops"),
         # path('feedback/', view=company_update_view),
 
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -35,10 +36,6 @@ urlpatterns += i18n_patterns(
 
         path("terms/", TemplateView.as_view(template_name="pages/terms.html"), name="terms"),
         path("policy/", TemplateView.as_view(template_name="pages/policy.html"), name="policy"),
-
-
-
-        path("oops/", view=oops_view, name="oops"),
 
         # path("profile/", TemplateView.as_view(template_name="account/password_change.html"), name="profile"),
         path("profile/", password_change, {'template_name': 'account/password_change.html', }, name="profile"),
