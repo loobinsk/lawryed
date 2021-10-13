@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 14:02+0000\n"
-"PO-Revision-Date: 2021-08-30 14:01+0000\n"
-"Last-Translator:   <admin@admin.net>\n"
+"POT-Creation-Date: 2021-10-11 11:34+0000\n"
+"PO-Revision-Date: 2021-10-11 08:36+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -32,6 +32,12 @@ msgstr "русский"
 #: config/settings/base.py:40
 msgid "Ukrainian"
 msgstr "Украинский"
+
+#: config/settings/base.py:41
+#, fuzzy
+#| msgid "English"
+msgid "Polish"
+msgstr "английский"
 
 #: lawyerd/complaint/forms.py:7
 msgid "Enter e-mail"
@@ -837,11 +843,11 @@ msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:199
 msgid "infringement and get access to information about the claims in your"
-msgstr "и получить доступ к информации о претензиях в вашем профиле."
+msgstr "и получить доступ к информации о претензиях в вашем"
 
 #: lawyerd/templates/pages/home_unauthorized.html:199
 msgid "personal profile"
-msgstr "личный профиль"
+msgstr "личном кабинете"
 
 #: lawyerd/templates/pages/home_unauthorized.html:200
 msgid "Try it now"

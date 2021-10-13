@@ -38,6 +38,7 @@ LANGUAGES = [
         ('en', _('English')),
         ('ru', _('Russian')),
         ('uk', _('Ukrainian')),
+        ('pl', _('Polish')),
         ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
@@ -548,7 +549,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'i.makushinsky@lawyerd.net'
 EMAIL_HOST_USER = 'dmca@lawyerd.net'
 # EMAIL_HOST_PHONE_NUMBER = '+380660448113'
-EMAIL_HOST_PASSWORD = 'Taketheworld97'
+EMAIL_HOST_PASSWORD = 'Primusinterpares1221_1'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

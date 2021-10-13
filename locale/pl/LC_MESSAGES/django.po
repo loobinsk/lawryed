@@ -9,296 +9,286 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-11 11:34+0000\n"
-"PO-Revision-Date: 2021-08-30 14:01+0000\n"
-"Last-Translator:   <admin@admin.net>\n"
+"PO-Revision-Date: 2021-10-11 09:01+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.7\n"
 
 #: config/settings/base.py:38
 msgid "English"
-msgstr "Англійська"
+msgstr ""
 
 #: config/settings/base.py:39
 msgid "Russian"
-msgstr "російський"
+msgstr ""
 
 #: config/settings/base.py:40
 msgid "Ukrainian"
-msgstr "Українська"
+msgstr ""
 
 #: config/settings/base.py:41
-#, fuzzy
-#| msgid "English"
 msgid "Polish"
-msgstr "Англійська"
+msgstr ""
 
 #: lawyerd/complaint/forms.py:7
 msgid "Enter e-mail"
-msgstr "ведіть електронну пошту"
+msgstr ""
 
 #: lawyerd/complaint/forms.py:8
 msgid "Enter e-mail count"
-msgstr "Введіть кількість електронних листів"
+msgstr ""
 
 #: lawyerd/complaint/models.py:22 lawyerd/products/models.py:13
 msgid "waiting"
-msgstr "очікування"
+msgstr ""
 
 #: lawyerd/complaint/models.py:23
 msgid "processing"
-msgstr "обробка"
+msgstr ""
 
 #: lawyerd/complaint/models.py:24
 msgid "ok"
-msgstr "в порядку"
+msgstr ""
 
 #: lawyerd/complaint/models.py:25 lawyerd/products/models.py:16
 msgid "cancelled"
-msgstr "скасовано"
+msgstr ""
 
 #: lawyerd/complaint/models.py:27
 msgid "error"
-msgstr "помилка"
+msgstr ""
 
 #: lawyerd/complaint/models.py:48
 msgid "User"
-msgstr "Користувач"
+msgstr ""
 
 #: lawyerd/complaint/models.py:49
 msgid "Product"
-msgstr "Продукт"
+msgstr ""
 
 #: lawyerd/complaint/models.py:50
 msgid "Search text"
-msgstr "Пошук тексту"
+msgstr ""
 
 #: lawyerd/complaint/models.py:51
 msgid "Email to send abuse"
-msgstr "Електронна пошта для надсилання зловживань"
+msgstr ""
 
 #: lawyerd/complaint/models.py:53
 msgid "Count"
-msgstr "Рахувати"
+msgstr ""
 
 #: lawyerd/complaint/models.py:54 lawyerd/complaint/models.py:132
 #: lawyerd/templates/pages/products.html:163
 msgid "Status"
-msgstr "Статус"
+msgstr ""
 
 #: lawyerd/complaint/models.py:55
 msgid "Finish task Datetime "
-msgstr "Завершити завдання Дата -час"
+msgstr ""
 
 #: lawyerd/complaint/models.py:126
 #: lawyerd/templates/pages/home_unauthorized.html:144
 msgid "Complaint"
-msgstr "Направлення скарги"
+msgstr "Skarga"
 
 #: lawyerd/complaint/models.py:127
 msgid "Complaint URL"
-msgstr "URL -адреса скарги"
+msgstr ""
 
 #: lawyerd/complaint/models.py:128
 msgid "Complaint hosting"
-msgstr "Хостинг скарг"
+msgstr ""
 
 #: lawyerd/complaint/models.py:129 lawyerd/feedback/models.py:15
 #: lawyerd/users/forms.py:82
 msgid "Email"
-msgstr "Електронна пошта"
+msgstr ""
 
 #: lawyerd/complaint/models.py:131
 #: lawyerd/templates/pages/_home_authorized_js.html:21
 #: lawyerd/templates/pages/home_authorized.html:118
 msgid "Screenshot"
-msgstr "Скріншот"
+msgstr ""
 
 #: lawyerd/complaint/models.py:133
 msgid "Template name"
-msgstr "Назва шаблону"
+msgstr ""
 
 #: lawyerd/feedback/models.py:14 lawyerd/templates/pages/products.html:139
 msgid "Name"
-msgstr "Назва"
+msgstr ""
 
 #: lawyerd/feedback/models.py:16
 msgid "Phone"
-msgstr "Телефон"
+msgstr ""
 
 #: lawyerd/poster/apps.py:7
 msgid "Poster"
-msgstr "Плакат"
+msgstr ""
 
 #: lawyerd/products/forms.py:54
 msgid "Add product"
-msgstr "Додати товар"
+msgstr ""
 
 #: lawyerd/products/models.py:14
 msgid "accepted"
-msgstr "прийнято"
+msgstr ""
 
 #: lawyerd/products/models.py:21
 msgid "Game"
-msgstr "Гра"
+msgstr ""
 
 #: lawyerd/products/models.py:22
 msgid "Software"
-msgstr "Програмне забезпечення"
+msgstr ""
 
 #: lawyerd/products/models.py:23
 msgid "Photo"
-msgstr "Фотографія"
+msgstr ""
 
 #: lawyerd/products/models.py:24
 msgid "Picture"
-msgstr "Картина"
+msgstr ""
 
 #: lawyerd/products/models.py:25
 msgid "Course"
-msgstr "Курс"
+msgstr ""
 
 #: lawyerd/products/models.py:26
 msgid "Brand"
-msgstr "Бренд"
+msgstr ""
 
 #: lawyerd/products/models.py:46
 msgid "The name of the product"
-msgstr "Найменування товару"
+msgstr ""
 
 #: lawyerd/products/models.py:50
 msgid ""
 "Proof of product rights (Trademark from Global Brand Database or national "
 "registers)"
 msgstr ""
-"Підтвердження прав на продукцію (Торгова марка з Глобальної бази даних "
-"брендів або національних реєстрів)"
 
 #: lawyerd/products/models.py:51
 msgid "Document file name"
-msgstr "Назва файлу документа"
+msgstr ""
 
 #: lawyerd/products/models.py:53
 msgid "status"
-msgstr "статус"
+msgstr ""
 
 #: lawyerd/products/models.py:55
 msgid "Type of product"
-msgstr "Тип товару"
+msgstr ""
 
 #: lawyerd/templates/403.html:10
 msgid "Forbidden (403)"
-msgstr "Заборонено (403)"
+msgstr ""
 
 #: lawyerd/templates/403.html:12
 msgid "CSRF verification failed. Request aborted."
-msgstr "Помилка перевірки CSRF. Запит скасовано."
+msgstr ""
 
 #: lawyerd/templates/404.html:7
 msgid "Page not found"
-msgstr "Сторінку не знайдено"
+msgstr ""
 
 #: lawyerd/templates/500.html:7
 msgid "Server Error"
-msgstr "помилка серверу"
+msgstr ""
 
 #: lawyerd/templates/500.html:10
 msgid "Ooops!!! 500"
-msgstr "Упс !!! 500"
+msgstr ""
 
 #: lawyerd/templates/500.html:12
 msgid "Looks like something went wrong!"
-msgstr "Схоже, щось пішло не так!"
+msgstr ""
 
 #: lawyerd/templates/500.html:14
 msgid ""
 "We track these errors automatically, but if the problem persists feel free "
 "to contact us. In the meantime, try refreshing."
 msgstr ""
-"Ми автоматично відстежуємо ці помилки, але якщо проблема не зникає, не "
-"соромтеся звертатися до нас. Тим часом спробуйте освіжитись."
 
 #: lawyerd/templates/account/account_inactive.html:5
 #: lawyerd/templates/account/account_inactive.html:8
 msgid "Account Inactive"
-msgstr "Обліковий запис неактивний"
+msgstr ""
 
 #: lawyerd/templates/account/account_inactive.html:10
 msgid "This account is inactive."
-msgstr "Цей обліковий запис неактивний."
+msgstr ""
 
 #: lawyerd/templates/account/email.html:7
 msgid "Account"
-msgstr "Рахунок"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:10
 msgid "E-mail Addresses"
-msgstr "Адреси електронної пошти"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:13
 msgid "The following e-mail addresses are associated with your account:"
-msgstr "Наступні адреси електронної пошти пов'язані з вашим обліковим записом:"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:27
 msgid "Verified"
-msgstr "Перевірено"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:29
 msgid "Unverified"
-msgstr "Неперевірено"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:31
 msgid "Primary"
-msgstr "Первинний"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:37
 msgid "Make Primary"
-msgstr "Зробити основним"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:38
 msgid "Re-send Verification"
-msgstr "Повторно надіслати підтвердження"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:39
 msgid "Remove"
-msgstr "Видалити"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:46
 msgid "Warning:"
-msgstr "Увага:"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:46
 msgid ""
 "You currently do not have any e-mail address set up. You should really add "
 "an e-mail address so you can receive notifications, reset your password, etc."
 msgstr ""
-"Наразі у вас немає настроєної адреси електронної пошти. Вам дійсно слід "
-"додати адресу електронної пошти, щоб ви могли отримувати сповіщення, скидати "
-"пароль тощо."
 
 #: lawyerd/templates/account/email.html:51
 msgid "Add E-mail Address"
-msgstr "Додайте адресу електронної пошти"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:56
 msgid "Add E-mail"
-msgstr "Додати електронну пошту"
+msgstr ""
 
 #: lawyerd/templates/account/email.html:66
 msgid "Do you really want to remove the selected e-mail address?"
-msgstr "Ви дійсно хочете видалити вибрану адресу електронної пошти?"
+msgstr ""
 
 #: lawyerd/templates/account/email_confirm.html:6
 #: lawyerd/templates/account/email_confirm.html:10
 msgid "Confirm E-mail Address"
-msgstr "Підтвердьте адресу електронної пошти"
+msgstr ""
 
 #: lawyerd/templates/account/email_confirm.html:16
 #, python-format
@@ -306,12 +296,10 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
-"Будь ласка, підтвердьте, що <a href=\"mailto: %(email)s\"> %(email)s</a>-це "
-"адреса електронної пошти для користувача %(user_display)s."
 
 #: lawyerd/templates/account/email_confirm.html:20
 msgid "Confirm"
-msgstr "Підтвердити"
+msgstr ""
 
 #: lawyerd/templates/account/email_confirm.html:27
 #, python-format
@@ -319,15 +307,12 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
-"Це посилання для підтвердження електронної пошти минуло або є недійсним. <a "
-"href=\" %(email_url)s\"> надішліть новий запит на підтвердження електронною "
-"поштою </a>."
 
 #: lawyerd/templates/account/login.html:7
 #: lawyerd/templates/account/login.html:13
 #: lawyerd/templates/account/login.html:46 lawyerd/templates/header.html:75
 msgid "Login"
-msgstr "Вхід"
+msgstr "Zaloguj się"
 
 #: lawyerd/templates/account/login.html:18
 #, python-format
@@ -337,14 +322,10 @@ msgid ""
 "\"%(signup_url)s\">sign up</a>\n"
 "                        for a %(site_name)s account and sign in below:"
 msgstr ""
-"Увійдіть, використовуючи один\n"
-"із наявних облікових записів третіх сторін. Або <a href=\" %(signup_url)s\"> "
-"зареєструйтесь </a>\n"
-"для %(site_name)sоблікового запису та увійдіть нижче:"
 
 #: lawyerd/templates/account/login.html:27
 msgid "or"
-msgstr "або"
+msgstr "lub"
 
 #: lawyerd/templates/account/login.html:34
 #, python-format
@@ -352,25 +333,25 @@ msgid ""
 "If you have not created an account yet, then please\n"
 "                        <a href=\"%(signup_url)s\">sign up</a> first."
 msgstr ""
-"Якщо ви ще не створили обліковий запис, спочатку\n"
-"<a href=\" %(signup_url)s\"> зареєструйтесь </a>."
+"Jeżeli nie posiadasz konta, najpierw <a href=\"%(signup_url)s\">zarejestruj "
+"</a>się"
 
 #: lawyerd/templates/account/login.html:45
 msgid "Forgot Password?"
-msgstr "Забули пароль?"
+msgstr "Zapomniałeś hasła?"
 
 #: lawyerd/templates/account/logout.html:5
 #: lawyerd/templates/account/logout.html:19
 msgid "Sign Out"
-msgstr "Вийти з аккаунта"
+msgstr ""
 
 #: lawyerd/templates/account/logout.html:10
 msgid "Log Out"
-msgstr "Вийти"
+msgstr ""
 
 #: lawyerd/templates/account/logout.html:12
 msgid "Are you sure you want to log out?"
-msgstr "Ви впевнені, що хочете вийти?"
+msgstr ""
 
 #: lawyerd/templates/account/password_change.html:21
 #: lawyerd/templates/account/password_reset_from_key.html:5
@@ -378,49 +359,43 @@ msgstr "Ви впевнені, що хочете вийти?"
 #: lawyerd/templates/account/password_reset_from_key_done.html:4
 #: lawyerd/templates/account/password_reset_from_key_done.html:7
 msgid "Change Password"
-msgstr "Змінити пароль"
+msgstr ""
 
 #: lawyerd/templates/account/password_change.html:39
 #: lawyerd/templates/users/user_form.html:13 lawyerd/users/forms.py:284
 msgid "Update"
-msgstr "Оновлення"
+msgstr ""
 
 #: lawyerd/templates/account/password_reset.html:7
 #: lawyerd/templates/account/password_reset.html:11
 #: lawyerd/templates/account/password_reset_done.html:6
 #: lawyerd/templates/account/password_reset_done.html:9
 msgid "Password Reset"
-msgstr "Скидання пароля"
+msgstr ""
 
 #: lawyerd/templates/account/password_reset.html:16
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll send you "
 "an e-mail allowing you to reset it."
 msgstr ""
-"абули свій пароль? Введіть свою електронну адресу нижче, і ми надішлемо вам "
-"електронний лист, що дозволить вам скинути її."
 
 #: lawyerd/templates/account/password_reset.html:21
 msgid "Reset My Password"
-msgstr "Скинути мій пароль"
+msgstr ""
 
 #: lawyerd/templates/account/password_reset.html:24
 msgid "Please contact us if you have any trouble resetting your password."
 msgstr ""
-"Будь ласка, зв'яжіться з нами, якщо у вас виникнуть проблеми зі скиданням "
-"пароля."
 
 #: lawyerd/templates/account/password_reset_done.html:15
 msgid ""
 "We have sent you an e-mail. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
-"Ми надіслали вам електронний лист. Будь ласка, зв'яжіться з нами, якщо ви не "
-"отримаєте його протягом декількох хвилин."
 
 #: lawyerd/templates/account/password_reset_from_key.html:8
 msgid "Bad Token"
-msgstr "Поганий маркер"
+msgstr ""
 
 #: lawyerd/templates/account/password_reset_from_key.html:12
 #, python-format
@@ -429,47 +404,44 @@ msgid ""
 "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
 "a>."
 msgstr ""
-"Посилання на скидання пароля було недійсним, можливо, тому, що воно вже "
-"використовувалося. Попросіть <a href=\" %(passwd_reset_url)s\"> змінити "
-"новий пароль </a>."
 
 #: lawyerd/templates/account/password_reset_from_key.html:18
 msgid "change password"
-msgstr "змінити пароль"
+msgstr ""
 
 #: lawyerd/templates/account/password_reset_from_key.html:21
 #: lawyerd/templates/account/password_reset_from_key_done.html:8
 msgid "Your password is now changed."
-msgstr "Ваш пароль змінено."
+msgstr ""
 
 #: lawyerd/templates/account/password_set.html:6
 #: lawyerd/templates/account/password_set.html:9
 #: lawyerd/templates/account/password_set.html:14
 msgid "Set Password"
-msgstr "Встановити пароль"
+msgstr ""
 
 #: lawyerd/templates/account/signup.html:6
 #: lawyerd/templates/account/signup.html:13
 #: lawyerd/templates/account/signup.html:46 lawyerd/templates/header.html:79
 #: lawyerd/users/forms.py:132
 msgid "Registration"
-msgstr "Реєстрація"
+msgstr "Załóż konto"
 
 #: lawyerd/templates/account/signup_closed.html:5
 #: lawyerd/templates/account/signup_closed.html:8
 msgid "Sign Up Closed"
-msgstr "Реєстрація закрита"
+msgstr ""
 
 #: lawyerd/templates/account/signup_closed.html:10
 msgid "We are sorry, but the sign up is currently closed."
-msgstr "На жаль, реєстрація наразі закрита."
+msgstr ""
 
 #: lawyerd/templates/account/verification_sent.html:5
 #: lawyerd/templates/account/verification_sent.html:8
 #: lawyerd/templates/account/verified_email_required.html:5
 #: lawyerd/templates/account/verified_email_required.html:8
 msgid "Verify Your E-mail Address"
-msgstr "Перевірте свою адресу електронної пошти"
+msgstr ""
 
 #: lawyerd/templates/account/verification_sent.html:10
 msgid ""
@@ -477,9 +449,6 @@ msgid ""
 "finalize the signup process. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
-"Ми надіслали вам електронного листа для перевірки. Перейдіть за наданим "
-"посиланням, щоб завершити процес реєстрації. Будь ласка, зв'яжіться з нами, "
-"якщо ви не отримаєте його протягом декількох хвилин."
 
 #: lawyerd/templates/account/verified_email_required.html:12
 msgid ""
@@ -487,9 +456,6 @@ msgid ""
 "you are who you claim to be. For this purpose, we require that you\n"
 "verify ownership of your e-mail address. "
 msgstr ""
-"Ця частина сайту вимагає від нас підтвердження того, що\n"
-"ви є тим, ким ви себе видаєте. Для цього ми вимагаємо, щоб ви\n"
-"підтвердили право власності на свою адресу електронної пошти."
 
 #: lawyerd/templates/account/verified_email_required.html:16
 msgid ""
@@ -497,9 +463,6 @@ msgid ""
 "verification. Please click on the link inside this e-mail. Please\n"
 "contact us if you do not receive it within a few minutes."
 msgstr ""
-"Ми надіслали вам електронного листа для\n"
-"перевірки. Будь ласка, натисніть на посилання у цьому листі. Будь ласка,\n"
-"зв'яжіться з нами, якщо ви не отримаєте його протягом декількох хвилин."
 
 #: lawyerd/templates/account/verified_email_required.html:20
 #, python-format
@@ -507,77 +470,75 @@ msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
 msgstr ""
-"<strong> Примітка. </strong> Ви все ще можете <a href=\" %(email_url)s\"> "
-"змінити адресу електронної пошти </a>."
 
 #: lawyerd/templates/base.html:256 lawyerd/templates/base_old.html:148
 msgid "You request in progress"
-msgstr "Ви надсилаєте запит"
+msgstr ""
 
 #: lawyerd/templates/base.html:256 lawyerd/templates/base_old.html:148
 msgid "Please wait"
-msgstr "Будь ласка, зачекайте"
+msgstr ""
 
 #: lawyerd/templates/footer.html:25
 msgid "Find out more"
-msgstr "Дізнатися більше"
+msgstr "CHCESZ DOWIEDZIEĆ SIĘ WIĘCEJ?"
 
 #: lawyerd/templates/footer.html:26 lawyerd/templates/header.html:51
 #: lawyerd/templates/pages/home_unauthorized.html:64
 msgid "Contact us"
-msgstr "Зв'яжіться з нами"
+msgstr "Skontaktuj się z nami"
 
 #: lawyerd/templates/footer.html:27
 msgid "email"
-msgstr "електронна пошта"
+msgstr ""
 
 #: lawyerd/templates/footer.html:28
 msgid "telegram"
-msgstr "телеграм"
+msgstr ""
 
 #: lawyerd/templates/header.html:23
 msgid "Admin"
-msgstr "Адмін"
+msgstr ""
 
 #: lawyerd/templates/header.html:30
 msgid "API"
-msgstr "API"
+msgstr ""
 
 #: lawyerd/templates/header.html:37
 msgid "SQL"
-msgstr "SQL"
+msgstr ""
 
 #: lawyerd/templates/header.html:46 lawyerd/templates/header.html:64
 #: lawyerd/templates/plans/pricing2.html:4
 #: lawyerd/templates/plans/pricing_original.html:6
 msgid "Pricing"
-msgstr "Тарифи"
+msgstr "Oferta"
 
 #: lawyerd/templates/header.html:56
 msgid "Logout"
-msgstr "Вийти"
+msgstr ""
 
 #: lawyerd/templates/header.html:70
 msgid "About us"
-msgstr "Про нас"
+msgstr "O nas"
 
 #: lawyerd/templates/pages/_______home_unauthorized_search_form_inline.html:7
 msgid "Enter keywords for start"
-msgstr "Введіть ключові слова для початку"
+msgstr ""
 
 #: lawyerd/templates/pages/_______home_unauthorized_search_form_inline.html:8
 msgid "Search"
-msgstr "Пошук"
+msgstr ""
 
 #: lawyerd/templates/pages/_______home_unauthorized_search_form_inline.html:9
 msgid "To try one more times"
-msgstr "Спробувати ще раз"
+msgstr ""
 
 #: lawyerd/templates/pages/_______pricing.html:5
 #: lawyerd/templates/plans/pricing.html:5
 #: lawyerd/templates/plans/pricing_.html:5 lawyerd/templates/side_bar.html:77
 msgid "Payment plan"
-msgstr "Тарифи"
+msgstr "Plan płatności"
 
 #: lawyerd/templates/pages/_home_authorized_js.html:7
 #: lawyerd/templates/pages/_home_authorized_js.html:8
@@ -585,207 +546,208 @@ msgstr "Тарифи"
 #: lawyerd/templates/pages/home_authorized.html:105
 #: lawyerd/templates/pages/home_unauthorized.html:84
 msgid "Cancel"
-msgstr "Скасувати"
+msgstr ""
 
 #: lawyerd/templates/pages/_home_authorized_js.html:13
 #: lawyerd/templates/pages/_home_authorized_js.html:14
 #: lawyerd/templates/pages/home_authorized.html:110
 #: lawyerd/templates/pages/home_authorized.html:111
 msgid "Detail"
-msgstr "Деталь"
+msgstr ""
 
 #: lawyerd/templates/pages/about_us.html:6
 msgid "About Us"
-msgstr "Про нас"
+msgstr "O nas"
 
 #: lawyerd/templates/pages/company.html:14 lawyerd/templates/side_bar.html:48
 msgid "Company information"
-msgstr "Інформація про компанію"
+msgstr "Informacje o firmie"
 
 #: lawyerd/templates/pages/contact_us.html:5
 msgid "Contact Us"
-msgstr "Зв'яжіться з нами"
+msgstr "Skontaktuj się z nami"
 
 #: lawyerd/templates/pages/faq.html:6 lawyerd/templates/side_bar.html:90
 msgid "FAQ"
-msgstr "FAQ"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:4
 #: lawyerd/templates/side_bar.html:19
 msgid "Search and History"
-msgstr "Пошук та історія"
+msgstr "Wyszukiwanie i historia"
 
 #: lawyerd/templates/pages/home_authorized.html:14
 msgid "Warning! You emails will be redirected to: "
-msgstr "Увага! Ваші електронні листи будуть переспрямовані на:"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:28
 msgid "Please put the exact link on the infringing resource"
-msgstr "Будь ласка, розмістіть точне посилання на ресурсі, що порушує права"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:29
 msgid " Search"
-msgstr "Пошук"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:48
 msgid "start submitting"
-msgstr "почати подавати"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:55
 msgid ""
 "It is also important to choose the right product which has to be protected."
-msgstr "Також важливо правильно вибрати продукт, який необхідно захистити."
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:60
 msgid "We issued"
-msgstr "Ми видали"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:64
 msgid "Complaints againts websites that infringe you intellectual rights"
 msgstr ""
-"Скарги знову подають веб -сайти, які порушують ваші інтелектуальні права"
 
 #: lawyerd/templates/pages/home_authorized.html:67
 msgid "Sites to which complaints were issued"
-msgstr "Сайти, на які надсилалися скарги"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:69
 msgid "You can click on the link to any of these lines"
-msgstr "Ви можете натиснути посилання на будь -який із цих рядків"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:78
 msgid "Complaint details"
-msgstr "Деталі скарги"
+msgstr ""
 
 #: lawyerd/templates/pages/home_authorized.html:79
 msgid "Click Detail to view details of complaint"
-msgstr "Натисніть Детально, щоб переглянути деталі скарги"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:23
 msgid "More time"
-msgstr "Приділіть більше часу"
+msgstr "Poświęć więcej czasu"
 
 #: lawyerd/templates/pages/home_unauthorized.html:23
 msgid "for your business, <br> less for routine"
-msgstr "Вашому бізнесу, <br> а рутину залиште для нас"
+msgstr "swojemu biznesowi, <br> a rutynę zostaw nam"
 
 #: lawyerd/templates/pages/home_unauthorized.html:24
 msgid "You can defend your copyright on your own."
-msgstr "Ви можете самостійно захистити свої права інтелектуальної власності"
+msgstr "Samodzielna ochrona praw własności intelektualnej."
 
 #: lawyerd/templates/pages/home_unauthorized.html:25
 msgid "No third parties are involved."
-msgstr "Вам більше не потрібні посередники."
+msgstr "Nie są już potrzebni pośrednicy."
 
 #: lawyerd/templates/pages/home_unauthorized.html:27
 msgid "Try for free"
-msgstr "Спробуйте безкоштовно"
+msgstr "Wypróbuj za darmo"
 
 #: lawyerd/templates/pages/home_unauthorized.html:43
 msgid "Process"
-msgstr "Процес"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:44
 msgid "How it <br> works"
-msgstr "Як це працює"
+msgstr "Jak to <br> działa?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:45
 msgid "We work in all jurisdictions worldwide"
-msgstr "Ми працюємо у всіх юрисдикціях по всьому світу"
+msgstr "Zapewniamy ochronę Państwa praw w każdej jurysdykcji"
 
 #: lawyerd/templates/pages/home_unauthorized.html:65
 msgid "Get in touch"
-msgstr "Налагодити зв'язок"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:66
 msgid "Leave us your details and we will contact you as soon as possible"
-msgstr "Залиште нам свої дані, і ми зв'яжемося з вами якомога швидше"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:80
 msgid "Send"
-msgstr "Надіслати"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:100
 msgid "Excellent!"
-msgstr "Відмінно!"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:101
 msgid "We will contact you as soon as possible"
-msgstr "Ми зв'яжемося з вами якомога швидше"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:105
 msgid "Close"
-msgstr "Закрити"
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:121
 msgid "Powerful and easy to handle"
-msgstr "Потужний та простий в використанні"
+msgstr "WYDAJNY I ŁATWY W UŻYCIU"
 
 #: lawyerd/templates/pages/home_unauthorized.html:122
 msgid "Copyright protection <br> in three steps"
-msgstr "Захисти свої права інтелектуальної власності <br> за три кроки"
+msgstr "Ochrona praw własności intelektualnej <br> w trzech krokach"
 
 #: lawyerd/templates/pages/home_unauthorized.html:127
 msgid "STEP 1"
-msgstr "КРОК 1"
+msgstr "KROK 1"
 
 #: lawyerd/templates/pages/home_unauthorized.html:128
 msgid "Indicate"
-msgstr "Формування скарги"
+msgstr "Sporządzenie skargi"
 
 #: lawyerd/templates/pages/home_unauthorized.html:129
 msgid "The system automatically fulfill the complaint template"
-msgstr "Система автоматично заповнює формуляр скарги."
+msgstr "System automatycznie wypełnia formularz skargi"
 
 #: lawyerd/templates/pages/home_unauthorized.html:130
 msgid "The system automatically adds right holder documentation"
 msgstr ""
-"Система автоматично додає до скарги документи, які підтверджують Ваші права "
-"на продукт."
+"System automatycznie doda do reklamacji dokumenty potwierdzające uprawnienia "
+"do produktu"
 
 #: lawyerd/templates/pages/home_unauthorized.html:135
 msgid "STEP 2"
-msgstr "КРОК 2"
+msgstr "KROK 2"
 
 #: lawyerd/templates/pages/home_unauthorized.html:136
 msgid "Find"
-msgstr "Пошук відповідальної особи"
+msgstr "Ustalenie strony odpowiedzialnej"
 
 #: lawyerd/templates/pages/home_unauthorized.html:137
 msgid ""
 "The system automatically finds out responsible for content hosting bodies"
 msgstr ""
-"Система автоматично знаходить орган, уповноважений за розміщення контенту."
+"System automatycznie wyszukuje podmiot uprawniony do zamieszczania treści"
 
 #: lawyerd/templates/pages/home_unauthorized.html:138
 msgid "The system automatically finds out means of communication"
 msgstr ""
-"Система автоматично знаходить засоби комунікації з уповноваженим за "
-"розміщення контенту органом."
+"System automatycznie wyszukuje sposoby komunikacji z organem uprawnionym do "
+"zamieszczania treści"
 
 #: lawyerd/templates/pages/home_unauthorized.html:143
 msgid "STEP 3"
-msgstr "КРОК 3"
+msgstr "KROK 3"
 
 #: lawyerd/templates/pages/home_unauthorized.html:145
 msgid "The system automatically adds evidence of infringement"
 msgstr ""
-"Система автоматично додає до скарги докази порушення, чим завершує "
-"формування скарги."
+"System automatycznie wysyła wypełnione zgłoszenie (skargę) do autoryzowanego "
+"agenta"
 
 #: lawyerd/templates/pages/home_unauthorized.html:146
 msgid ""
 "The system automatically makes the report and collects information about the "
 "particular case"
-msgstr "Система автоматично надає звіт щодо статусу окремо узятого порушення"
+msgstr ""
+"System automatycznie dostarcza raport dotyczący postępu poszczególnych "
+"naruszeń"
 
 #: lawyerd/templates/pages/home_unauthorized.html:155
 msgid "Automated service"
-msgstr "Автоматизоване обслуговування"
+msgstr "ZAUTOMATYZOWANY SERWIS"
 
 #: lawyerd/templates/pages/home_unauthorized.html:156
 msgid "Makes it faster.<br>Does more"
-msgstr "Захищай швидше <br> Встигай більше"
+msgstr "Szybsza ochrona <br> Więcej możliwości "
 
 #: lawyerd/templates/pages/home_unauthorized.html:159
 msgid ""
@@ -797,67 +759,65 @@ msgid ""
 "\t\t\t"
 msgstr ""
 "\n"
-"Наш сервіс працює цілодобово і допоможе вам з будь-яким обсягом робочого "
-"навантаження завдяки повній автоматизації. Ми гарантуємо захист Ваших прав "
-"інтелектуальної власності від несанкціонованого використання в Інтернеті."
+"Nasz serwis działa 24/7 i dzięki pełnej automatyzacji pozwala uzyskać "
+"wsparcie przy każdym zakresie prac. Zapewniamy, że Państwa prawa własności "
+"intelektualnej są chronione przed nieuprawnionym wykorzystaniem w Internecie."
 
 #: lawyerd/templates/pages/home_unauthorized.html:166
 msgid ""
 "You will get the most out of your online income stream. The service itself "
 "finds and removes any"
 msgstr ""
-"Ви отримаєте максимальні показники від свого онлайн прибутку. Система сама "
-"знаходить і видаляє будь-який вміст, "
+"Dzięki temu można uzyskać największe zyski z dochodów online. System sam "
+"znajduje i usuwa treści niezgodne z prawem autorskim."
 
 #: lawyerd/templates/pages/home_unauthorized.html:167
 msgid "content infringing the copyright."
-msgstr "вміст, що порушує авторські права."
+msgstr ""
 
 #: lawyerd/templates/pages/home_unauthorized.html:176
 msgid ""
 "28 times cheaper than any practicing lawyer, who protects your intellectual "
 "property"
-msgstr ""
-"Разів дешеше ніж вартість послуг юриста в сфері захисту прав інтелектуальної "
-"власності"
+msgstr "28 razy taniej niż usługi prawnika ds. własności intelektualnej"
 
 #: lawyerd/templates/pages/home_unauthorized.html:183
 msgid "Seconds takes per complaint on average"
-msgstr "Секунд в середньому на направлення скарги"
+msgstr "Średnio, na przesłanie skargi"
 
 #: lawyerd/templates/pages/home_unauthorized.html:191
 msgid "7 times faster than regular services provided by lawyers"
-msgstr "В 7 разів швидше, ніж юрист"
+msgstr "7 razy szybciej niż prawnik"
 
 #: lawyerd/templates/pages/home_unauthorized.html:197
 msgid "Trial version"
-msgstr "Пробна версія"
+msgstr "Wersja ograniczona czasowo"
 
 #: lawyerd/templates/pages/home_unauthorized.html:198
 msgid "Free"
-msgstr "Безкоштовно"
+msgstr "Za darmo"
 
 #: lawyerd/templates/pages/home_unauthorized.html:199
 msgid "Get the opportunity to file up to 5 complaints of intellectual property"
 msgstr ""
-"Отримайте можливість подати до 5 скарг на порушення прав інтелектуальної "
-"власності"
+"Uzyskaj możliwość złożenia do 5 skarg dotyczących niezgodności z prawem "
+"własności intelektualnej"
 
 #: lawyerd/templates/pages/home_unauthorized.html:199
 msgid "infringement and get access to information about the claims in your"
-msgstr "та отримати доступ до інформації про порушення у вашому"
+msgstr "i uzyskaj dostęp do informacji o skargach"
 
 #: lawyerd/templates/pages/home_unauthorized.html:199
 msgid "personal profile"
-msgstr "особистому кабінеті"
+msgstr "na swoim profilu"
 
 #: lawyerd/templates/pages/home_unauthorized.html:200
 msgid "Try it now"
-msgstr "Спробуй зараз"
+msgstr "Wypróbuj teraz"
 
 #: lawyerd/templates/pages/home_unauthorized.html:204
 msgid "MORE ABOUT"
-msgstr "БІЛЬШЕ ПРО"
+msgstr "WIĘCEJ O"
 
 #: lawyerd/templates/pages/home_unauthorized.html:209
 #, python-format
@@ -877,13 +837,14 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Людство розвивається, кожен день нові продукти і послуги створюють існуючий "
-"світ. У зв'язку з цими процесами все більше і більше зростає цінність "
-"оригінальності і новизни; всього того, що дозволяє одному продукту "
-"відрізнятися від іншого і представляти свої конкурентні переваги чіткіше.\n"
-"Однак, в цих умовах значно зростає кількість порушень прав інтелектуальної "
-"власності. Щорічні збитки від порушення прав інтелектуальної власності для "
-"різних категорій бізнесу становлять від 20%% до 35%% чистого прибутку."
+"Ludzkość ewoluuje, codziennie pojawiają się nowe produkty i usługi, które "
+"tworzą istniejący świat. W związku z tymi procesami coraz bardziej wzrasta "
+"wartość oryginalności i nowości; wszystkiego, co pozwala jednemu produktowi "
+"odróżnić się od drugiego i wyraźniej zaprezentować swoją przewagę "
+"konkurencyjną. W tym środowisku jednak liczba naruszeń własności "
+"intelektualnej znacznie wzrasta. Roczne straty wynikające z naruszenia praw "
+"własności intelektualnej dla różnych kategorii przedsiębiorstw wynoszą od "
+"20%% do 35%% przychodów netto."
 
 #: lawyerd/templates/pages/home_unauthorized.html:221
 msgid ""
@@ -902,25 +863,25 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Отже, чому ми тут?\n"
-"Lawyerd! допомагає компаніям і приватним особам захистити свої права на "
-"інтелектуальну власність, зберегти і примножити онлайн-доходи.\n"
-"Ми спрощуємо процес захисту інтелектуальної власності. Нашим клієнтам досить "
-"вказати інформацію про правовласників і продукті, а система автоматично "
-"забезпечить повний захист в Інтернеті, Вам навіть не потрібно про це думати. "
-"Створіть кращу версію свого продукту, а решту залиште нам."
+"Więc dlaczego tu jesteśmy? Lawyerd! pomaga firmom i klientom indywidualnym "
+"chronić ich prawa własności intelektualnej oraz zachować i zwiększyć ich "
+"przychody w Internecie. Sprawiamy, że proces ochrony własności "
+"intelektualnej staje się prosty. Wystarczy, że podasz informacje o "
+"właścicielu i produkcie, a system automatycznie zapewni Ci pełną ochronę "
+"online, nie musisz nawet o tym myśleć. Stwórz najlepszą wersję swojego "
+"produktu, a resztę zostaw nam."
 
 #: lawyerd/templates/pages/home_unauthorized.html:238
 msgid "Frequently asked <br>questions"
-msgstr "Найчастіші питання <br>"
+msgstr "Najczęściej zadawane <br> pytania"
 
 #: lawyerd/templates/pages/home_unauthorized.html:239
 msgid "Have a question? Leave your details and we <br> will tell you"
-msgstr "Є питання? Залиште свої дані, <br> і ми зв'яжемося з вами"
+msgstr "Masz pytanie? Podaj swoje dane, a my  <br> skontaktujemy się z Tobą"
 
 #: lawyerd/templates/pages/home_unauthorized.html:244
 msgid "How to start using Lawyerd!?"
-msgstr "Як почати користуватися Lawyerd !?"
+msgstr "Jak rozpocząć pracę z Lawyerd!?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:246
 msgid ""
@@ -938,61 +899,61 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Для використання Lawyerd! вам необхідно пройти загальну реєстрацію та ввести "
-"необхідну інформацію в колонку «Інформація про правовласника». Після цього "
-"необхідно вказати назву товару і додати документ, що підтверджує ваші права "
-"на ТМ. Також важливо обрати Ваш тарифний план. Як тільки ми перевіримо "
-"надану вами інформацію на відповідність формальним вимогам, ми зв'яжемося з "
-"вами за вказаними вами каналам зв'язку."
+"Aby korzystać z serwisu Lawyerd! należy zarejestrować się i podać niezbędne "
+"dane w kolumnie \"Informacje o firmie\". Następnie należy wpisać nazwę "
+"produktu oraz dokument potwierdzający prawa do znaku towarowego. Ważne jest "
+"również wybrać plan, którym jesteś zainteresowany. Po weryfikacji, że podane "
+"przez Ciebie informacje spełniają wymogi formalne, skontaktujemy się z Tobą "
+"za pośrednictwem wskazanych przez Ciebie sposobów komunikacji."
 
 #: lawyerd/templates/pages/home_unauthorized.html:259
 msgid "How could I purchase the service or get a trial period?"
-msgstr "Як я можу придбати послугу або отримати пробну версію?"
+msgstr "Jak mogę wykupić usługę lub skorzystać z wersji próbnej?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:261
 msgid "Contact us via the"
-msgstr "Зв'яжіться з нами через"
+msgstr "Skontaktuj się z nami poprzez"
 
 #: lawyerd/templates/pages/home_unauthorized.html:264
 msgid "form"
-msgstr "форму"
+msgstr "formularz"
 
 #: lawyerd/templates/pages/home_unauthorized.html:264
 msgid "write to us by mail or Telegram. We will contact you within 5 minutes."
 msgstr ""
-"напишіть нам поштою або Telegram. Ми зв'яжемося з вами протягом 5 хвилин."
+"mailowo lub za pośrednictwem Telegram. Odezwiemy się do Ciebie w ciągu 5 "
+"minut."
 
 #: lawyerd/templates/pages/home_unauthorized.html:269
 msgid ""
 "How quickly is the process of blocking resources infringing intellectual "
 "property rights?"
-msgstr ""
-"Як швидко буде проходити процес блокування ресурсів порушуючих права "
-"інтелектуальної власності?"
+msgstr "Jak szybko następuje proces blokowania treści naruszających prawo?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:271
 msgid ""
 "It depends on how quickly the authorized person answers. On average, 1-5 "
 "days pass from the moment of filing a complaint to the moment of blocking."
 msgstr ""
-"Це залежить від того, як швидко відповість уповноважена особа. В середньому "
-"від моменту подання скарги до моменту її блокування проходить 1-5 днів."
+"Zależy to od tego, jak szybko zareaguje osoba upoważniona. Czas między "
+"złożeniem zgłoszenia a zablokowaniem konta wynosi średnio 1-5 dni."
 
 #: lawyerd/templates/pages/home_unauthorized.html:277
 msgid "What objects of intellectual property you can protect?"
-msgstr "Які об’єкти інтелектуальної власності ви можете захистити?"
+msgstr "Jaką własność intelektualną można chronić?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:279
 msgid ""
 "We protect logos, images, videos, music, texts, games, software, and other "
 "objects of which you are the copyright holder."
 msgstr ""
-"Ми захищаємо логотипи, зображення, відео, музику, тексти, ігри, програмне "
-"забезпечення та інші об’єкти, інтелектуальної власності якими ви володієте."
+"Zapewniamy ochronę logotypów, obrazów, filmów, muzyki, tekstów, gier, "
+"oprogramowania i innej własności intelektualnej, do której użytkownik "
+"posiada prawa autorskie."
 
 #: lawyerd/templates/pages/home_unauthorized.html:285
 msgid "What information is needed to file a complaint?"
-msgstr "Яка інформація потрібна для подання скарги?"
+msgstr "Jakie informacje są potrzebne do złożenia zgłoszenia?"
 
 #: lawyerd/templates/pages/home_unauthorized.html:287
 msgid ""
@@ -1000,17 +961,17 @@ msgid ""
 "authorized person. Also, provide a link to the offending resource. You can "
 "contact us for clarification."
 msgstr ""
-"Ми просимо Вас надати інформацію про власника авторських прав та "
-"уповноважену особу. Також надайте посилання на ресурс, що порушує ваші "
-"права. Ви можете зв'язатися з нами для уточнення."
+"Należy podać informacje o właścicielu praw autorskich i osobie upoważnionej. "
+"Ponadto, prosimy o podanie linku do źródła, które narusza Twoje prawa. "
+"Możesz skontaktować się z nami w celu uzyskania dalszych szczegółów."
 
 #: lawyerd/templates/pages/oops.html:5
 msgid "Ooops!"
-msgstr "Упс!"
+msgstr ""
 
 #: lawyerd/templates/pages/oops.html:8
 msgid "Oooups!"
-msgstr "Ура!"
+msgstr ""
 
 #: lawyerd/templates/pages/oops.html:10
 msgid ""
@@ -1018,148 +979,139 @@ msgid ""
 "company and select a payment method (see the menu on the left, the blank "
 "tabs are marked in red)"
 msgstr ""
-"Щоб почати користуватися нашим сервісом, необхідно заповнити інформацію про "
-"компанію та вибрати спосіб оплати (див. Меню зліва, чисті вкладки позначені "
-"червоним)"
 
 #: lawyerd/templates/pages/policy.html:6
 msgid "Privacy Policy"
-msgstr "Політика конфіденційності"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:8 lawyerd/templates/side_bar.html:63
 msgid "Products"
-msgstr "Вироби"
+msgstr "Produkty"
 
 #: lawyerd/templates/pages/products.html:16
 msgid "New Product"
-msgstr "Новий продукт"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:17
 msgid ""
 "Add your product (it could be the game name, piece of art title or brand "
 "that you usually use in your bussiness activity)"
 msgstr ""
-"Додайте свій товар (це може бути назва гри, назва твору мистецтва або бренд, "
-"який ви зазвичай використовуєте у своїй діяльності)"
 
 #: lawyerd/templates/pages/products.html:46
 msgid "Your products"
-msgstr "Ваші товари"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:48
 msgid ""
 "Find a list of your products bellow. To remove a product from the list you "
 "have to click on the button in the left corner"
 msgstr ""
-"Нижче ви знайдете список ваших продуктів. Щоб видалити товар зі списку, "
-"потрібно натиснути кнопку в лівому кутку"
 
 #: lawyerd/templates/pages/products.html:74
 msgid "Delete"
-msgstr "Видалити"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:90
 msgid "ID"
-msgstr "Посвідчення особи"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:96
 msgid "Date"
-msgstr "Дата"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:109
 msgid "Type"
-msgstr "Тип"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:144
 msgid "document_file_name"
-msgstr "ім'я_файла документа"
+msgstr ""
 
 #: lawyerd/templates/pages/products.html:152
 msgid "Document"
-msgstr "Документ"
+msgstr ""
 
 #: lawyerd/templates/pages/terms.html:6
 msgid "Terms of Use"
-msgstr "Умови користування"
+msgstr ""
 
 #: lawyerd/templates/plans/pricing2.html:5
 msgid "Suitable for defending new business."
-msgstr "Підходить для захисту нового бізнесу."
+msgstr "Przeznaczony jest do ochrony nowego biznesu"
 
 #: lawyerd/templates/plans/pricing2.html:6
 msgid "Suitable for defending big fish`s products"
-msgstr "Підходить для захисту продуктів великих компаній."
+msgstr "Służy do ochrony produktów dużych firm"
 
 #: lawyerd/templates/plans/pricing2.html:7
 msgid "Choose the one that suits you"
-msgstr "Виберіть той, який вам підходить"
+msgstr "Wybierz ten, który najbardziej odpowiada Twoim potrzebom"
 
 #: lawyerd/templates/plans/pricing2.html:12
 msgid "Do it yourself"
-msgstr "Захисти себе сам"
+msgstr "Zabezpiecz się"
 
 #: lawyerd/templates/plans/pricing2.html:13
 msgid "For creative individuals and small teams"
-msgstr "Для невеликих команд та творчих осіб"
+msgstr "Dla kreatywnych użytkowników indywidualnych i małych zespołów"
 
 #: lawyerd/templates/plans/pricing2.html:15
 msgid "10 complaint for IP infringement"
-msgstr "10 скарг"
+msgstr "10 skarg"
 
 #: lawyerd/templates/plans/pricing2.html:16
 #: lawyerd/templates/plans/pricing2.html:37
 #: lawyerd/templates/plans/pricing2.html:65
 msgid "Access for information about claims in personal profile"
-msgstr "Доступ до інформації про скарги в профілі"
+msgstr "Dostęp do informacji o złożonych zgłoszeniach w profilu"
 
 #: lawyerd/templates/plans/pricing2.html:18
 msgid ""
 "Help in the process of filling the necessary information for sending "
 "complaint"
-msgstr ""
-"Допомога в процесі заповнення необхідної інформація для відправки\n"
-"скарг"
+msgstr "Udzielenie informacji niezbędnych do złożenia skargi"
 
 #: lawyerd/templates/plans/pricing2.html:27
 #: lawyerd/templates/plans/pricing2.html:48
 msgid "CONTACT US"
-msgstr "ЗВ'ЯЖІТЬСЯ З НАМИ"
+msgstr "Skontaktuj się z nami"
 
 #: lawyerd/templates/plans/pricing2.html:30
 msgid "Lawyers support regime"
-msgstr "Режим підтримки юристів"
+msgstr "Wsparcie dla prawników"
 
 #: lawyerd/templates/plans/pricing2.html:32
 msgid ""
 "For in-house lawyers or Law firm which provides services for the "
 "rightsholders"
-msgstr "Для інхаузів та юридичних фірм"
+msgstr "Dla kancelarii wewnętrznych lub prawnych"
 
 #: lawyerd/templates/plans/pricing2.html:35
 #: lawyerd/templates/plans/pricing2.html:56
 msgid "Unlimited complaints"
-msgstr "Необмежена кількість скарг"
+msgstr "Nieograniczona liczba skarg"
 
 #: lawyerd/templates/plans/pricing2.html:36
 msgid "Monthly report"
-msgstr "Місячний звіт"
+msgstr "Raport miesięczny"
 
 #: lawyerd/templates/plans/pricing2.html:39
 #: lawyerd/templates/plans/pricing2.html:57
 msgid "Further communication with authorized persons"
-msgstr "Комунікація з уповноваженими особами"
+msgstr "Komunikacja z osobami upoważnionymi"
 
 #: lawyerd/templates/plans/pricing2.html:51
 msgid "Full product Protection"
-msgstr "Системний захист"
+msgstr "Kompleksowa ochrona"
 
 #: lawyerd/templates/plans/pricing2.html:53
 msgid "Full IP protection services"
-msgstr "Послуги комплексного захисту прав інтелектуальної власності"
+msgstr "Kompleksowe usługi w zakresie ochrony praw własności intelektualnej"
 
 #: lawyerd/templates/plans/pricing2.html:55
 msgid "Everyday products monitoring"
-msgstr "Автоматичний моніторинг порушень"
+msgstr "Automatyczny monitoring naruszeń"
 
 #: lawyerd/templates/plans/pricing2.html:59
 msgid ""
@@ -1168,168 +1120,168 @@ msgid ""
 "                        intellectual property rights\n"
 "                        on the Internet"
 msgstr ""
-"Послуги з видалення будь-яких видів порушень прав інтелектуальної власності "
-"в Інтернеті"
+"Usługi dotyczące usuwania wszelkiego rodzaju naruszeń własności "
+"intelektualnej w Internecie"
 
 #: lawyerd/templates/plans/pricing2.html:67
 msgid "Unique deleting services"
-msgstr "Статистика і прогнози"
+msgstr "Statystyki i prognozy"
 
 #: lawyerd/templates/plans/pricing_original.html:28
 msgid "Contact support"
-msgstr "Зверніться до служби підтримки"
+msgstr ""
 
 #: lawyerd/templates/side_bar.html:24
 msgid "Specify the infringing resource "
-msgstr "Вкажіть ресурс, що порушує права"
+msgstr "Określ zasób naruszający prawo"
 
 #: lawyerd/templates/side_bar.html:35
 msgid "Profile"
-msgstr "Профіль"
+msgstr "Profil"
 
 #: lawyerd/templates/side_bar.html:39
 msgid "Your profile settings"
-msgstr "Налаштування вашого профілю"
+msgstr "Twoje ustawienia profilu"
 
 #: lawyerd/templates/side_bar.html:52
 msgid "Information about the company is vital for completing your complaints"
-msgstr "Інформація про компанію є важливою для вирішення ваших скарг"
+msgstr "Informacje o firmie są niezbędne do uzupełnienia reklamacji"
 
 #: lawyerd/templates/side_bar.html:67
 msgid "The details of your products and trademarks that apply to them"
-msgstr "Відомості про вашу продукцію та торгові марки, що на них поширюються"
+msgstr ""
+"Szczegółowe informacje o Twoich produktach i znakach towarowych, które mają "
+"do nich zastosowanie"
 
 #: lawyerd/templates/side_bar.html:81
 msgid "Choose you plan"
-msgstr "Виберіть свій план"
+msgstr "Wybierz swój plan"
 
 #: lawyerd/templates/side_bar.html:94
 msgid "Answers to the most frequently asked questions"
-msgstr "Відповіді на найпоширеніші запитання"
+msgstr "Odpowiedzi na najczęściej zadawane pytania"
 
 #: lawyerd/templates/users/user_detail.html:24
 msgid "My Info"
-msgstr "Моя інформація"
+msgstr ""
 
 #: lawyerd/templates/users/user_detail.html:25
 msgid "E-Mail"
-msgstr "Електронна пошта"
+msgstr ""
 
 #: lawyerd/users/apps.py:7
 msgid "Users"
-msgstr "Користувачі"
+msgstr ""
 
 #: lawyerd/users/forms.py:49
 msgid "This username has already been taken."
-msgstr "Це ім'я користувача вже зайнято."
+msgstr ""
 
 #: lawyerd/users/forms.py:85
 msgid "Confirm password"
-msgstr "Підтвердьте пароль"
+msgstr ""
 
 #: lawyerd/users/forms.py:88
 msgid "Username"
-msgstr "Ім'я користувача"
+msgstr ""
 
 #: lawyerd/users/models.py:23
 msgid "Full name"
-msgstr "Повне ім'я"
+msgstr ""
 
 #: lawyerd/users/models.py:24
 msgid "Redirect all emails to"
-msgstr "Перенаправити всі електронні листи на"
+msgstr ""
 
 #: lawyerd/users/models.py:50
 msgid "The name of the company"
-msgstr "Назва компанії"
+msgstr ""
 
 #: lawyerd/users/models.py:51
 msgid "The name of the company owner"
-msgstr "Ім'я власника компанії"
+msgstr ""
 
 #: lawyerd/users/models.py:53
 msgid "Name and surname of the representative"
-msgstr "Ім'я та прізвище представника"
+msgstr ""
 
 #: lawyerd/users/models.py:55
 msgid "Position of the represenatative/position/title"
-msgstr "Посада представника/посада/титул"
+msgstr ""
 
 #: lawyerd/users/models.py:59
 msgid "address country"
-msgstr "країна адреси"
+msgstr ""
 
 #: lawyerd/users/models.py:60
 msgid "City"
-msgstr "Місто"
+msgstr ""
 
 #: lawyerd/users/models.py:61
 msgid "Street Address"
-msgstr "Адреса вулиці"
+msgstr ""
 
 #: lawyerd/users/models.py:62
 msgid "State/Province"
-msgstr "Штат/провінція"
+msgstr ""
 
 #: lawyerd/users/models.py:63
 msgid "ZIP/Postal Code"
-msgstr "Поштовий індекс"
+msgstr ""
 
 #: lawyerd/users/models.py:66
 msgid "Region of registration of copyright, №, name TM"
-msgstr "Регіон реєстрації авторського права, №, назва ТМ"
+msgstr ""
 
 #: lawyerd/users/models.py:68
 msgid "Date of commencement of business activities"
-msgstr "Дата початку підприємницької діяльності"
+msgstr ""
 
 #: lawyerd/users/models.py:70
 msgid "Products that have been developed by"
-msgstr "Продукти, розроблені компанією"
+msgstr ""
 
 #: lawyerd/users/models.py:72
 msgid "Email represenatative"
-msgstr "Представник електронної пошти"
+msgstr ""
 
 #: lawyerd/users/models.py:75
 msgid ""
 "EDRPOU code, HQ address, corporate phone number, corporate email address"
 msgstr ""
-"Код ЄДРПОУ, адреса штаб -квартири, корпоративний номер телефону, "
-"корпоративна електронна адреса"
 
 #: lawyerd/users/models.py:80
 msgid "Additional information about the object to be protected"
-msgstr "Додаткова інформація про об’єкт, що охороняється"
+msgstr ""
 
 #: lawyerd/users/models.py:81
 msgid "Confirmation of the acceptance of the user agreement"
-msgstr "Підтвердження прийняття угоди користувача"
+msgstr ""
 
 #: lawyerd/users/models.py:82
 msgid "Company Website"
-msgstr "Веб -сайт компанії"
+msgstr ""
 
 #: lawyerd/users/models.py:83
 msgid "Terms"
-msgstr "Умови"
+msgstr ""
 
 #: lawyerd/users/models.py:85
 msgid "Representative telephone number"
-msgstr "Репрезентативний номер телефону"
+msgstr ""
 
 #: lawyerd/users/models.py:86
 msgid "Link to the official Youtube channel"
-msgstr "Посилання на офіційний канал Youtube"
+msgstr ""
 
 #: lawyerd/users/models.py:90
 msgid "Confirmation of the possibility of representing interests"
-msgstr "Підтвердження можливості представництва інтересів"
+msgstr ""
 
 #: lawyerd/users/models.py:93
 msgid "Confirmation of rights to TM (PDF file with WIPO) "
-msgstr "Підтвердження прав на ТМ (PDF -файл з ВОІВ)"
+msgstr ""
 
 #: lawyerd/users/views.py:45
 msgid "Infos successfully updated"
-msgstr "Інформацію успішно оновлено"
+msgstr ""
